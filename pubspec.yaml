@@ -1,4 +1,4 @@
-name: hyrule
+name: r10_quiz
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -40,6 +40,7 @@ dependencies:
   http: ^1.1.0
   dio: ^5.3.2
   flame: ^1.8.0
+  lib: ^0.0.3
 
 dev_dependencies:
   flutter_test:
@@ -59,13 +60,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
-  assets:
-    - assets/images/
+ 
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:r10_quiz/widgets/header.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -6,10 +7,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const AppHeader(title: 'Menu principal'),
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset('assets/image/background_ronaldinho.png',
+            child: Image.asset('assets/images/background_ronaldinho.png',
                 fit: BoxFit.cover),
           ),
           SafeArea(
