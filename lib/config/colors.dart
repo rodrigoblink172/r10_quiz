@@ -5,4 +5,5 @@ class AppColors {
 
   //Azul principal
   static const Color header = Color.fromARGB(24, 29, 39, 100);
+  static const Color boxButton = Color.fromARGB(255, 255, 255, 255);
 }
