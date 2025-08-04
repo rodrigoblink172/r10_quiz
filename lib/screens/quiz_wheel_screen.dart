@@ -90,11 +90,12 @@ class _QuizWheelScreenState extends State<QuizWheelScreen> {
                   const Align(
                     alignment: Alignment.centerRight,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 6),
+                      padding: EdgeInsets.symmetric(vertical: 10),
                       child: scoreHeader(),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  
+                  const SizedBox(height: 50),
                   Expanded(
                     child: Stack(
                       alignment: Alignment.center,
@@ -109,7 +110,7 @@ class _QuizWheelScreenState extends State<QuizWheelScreen> {
                           ),
                         ),
                         const Positioned(
-                          top: 90,
+                          top: 20,
                           child: Icon(
                             Icons.arrow_drop_down,
                             size: 80,
