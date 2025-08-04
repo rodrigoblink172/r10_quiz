@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/widgets/header.dart';
 import 'package:r10_quiz/widgets/scoreHeader.dart';
+import 'package:r10_quiz/screens/quiz_weel_screen.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -41,7 +42,14 @@ class Home extends StatelessWidget {
                     ),
                     Container(
                       margin: const EdgeInsets.only(top: 580),
-                    child: ElevatedButton(onPressed: (){print('123');},
+                    child: ElevatedButton(onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QuizWeelScreen(),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(255, 79, 55, 138),
                       foregroundColor: Colors.white,
