@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/widgets/header.dart';
 import 'package:r10_quiz/widgets/scoreHeader.dart';
-import 'package:r10_quiz/screens/quiz_weel_screen.dart';
+import 'package:r10_quiz/screens/quiz_wheel_screen.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => QuizWeelScreen(),
+                          builder: (context) => QuizWheelScreen(),
                         ),
                       );
                     },

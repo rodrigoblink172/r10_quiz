@@ -41,6 +41,7 @@ dependencies:
   dio: ^5.3.2
   flame: ^1.8.0
   lib: ^0.0.3
+  roulette: ^0.2.0
 
 dev_dependencies:
   flutter_test:
