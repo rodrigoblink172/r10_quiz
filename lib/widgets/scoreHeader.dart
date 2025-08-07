@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/config/colors.dart';
+import 'package:r10_quiz/screens/ranking_screen.dart';
 
 class scoreHeader extends StatelessWidget {
   const scoreHeader({super.key});
@@ -23,37 +24,30 @@ class scoreHeader extends StatelessWidget {
                   showDialog(
                     context: context,
                     barrierDismissible: true,
-                    builder:(context) {
-                      Future.delayed(const Duration(seconds: 3), ()
-                      {
+                    builder: (context) {
+                      Future.delayed(const Duration(seconds: 3), () {
                         Navigator.of(context).pop(true);
                       });
 
                       return const AlertDialog(
                         content: Text('Funcionalidade indispoível no momento'),
                       );
-
-
                     },
                   );
                 },
                 child: Row(
                   children: [
                     Padding(
-
-                    padding: const EdgeInsets.only(left: 5),
-                    child: Image.asset(
-                      'assets/images/hat_icon.png',
-                      width: 50,
-                      height: 50,
-                      
-                      
+                      padding: const EdgeInsets.only(left: 5),
+                      child: Image.asset(
+                        'assets/images/hat_icon.png',
+                        width: 50,
+                        height: 50,
+                      ),
                     ),
-                ),
-                
                     const SizedBox(width: 0),
                     const Padding(
-                      padding: EdgeInsets.only( bottom: 4, right: 15),
+                      padding: EdgeInsets.only(bottom: 4, right: 15),
                       child: Text(
                         '42',
                         style: TextStyle(
@@ -70,17 +64,14 @@ class scoreHeader extends StatelessWidget {
                   showDialog(
                     context: context,
                     barrierDismissible: true,
-                    builder:(context) {
-                      Future.delayed(const Duration(seconds: 3), ()
-                      {
+                    builder: (context) {
+                      Future.delayed(const Duration(seconds: 3), () {
                         Navigator.of(context).pop(true);
                       });
 
                       return const AlertDialog(
                         content: Text('Funcionalidade indispoível no momento'),
                       );
-
-
                     },
                   );
                 },
@@ -116,7 +107,18 @@ class scoreHeader extends StatelessWidget {
           height: 40,
           child: GestureDetector(
             onTap: () {
-              print('ranking');
+
+              final currentRout = ModalRoute.of(context)?.settings.name;
+              if (currentRout != '/ranking') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RankingScreen(),
+                    settings: const RouteSettings(name: '/ranking'),  
+                  ),
+                );
+              }
+              
             },
             child: Image.asset(
               'assets/images/ranking_icon.png',
