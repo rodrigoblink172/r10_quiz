@@ -16,7 +16,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
   late RouletteGroup _group;
   bool isSpinning = false;
 
-  final List<String> temas = ['Jogadores', 'História', 'Títulos', 'Seleções', 'Clubes'];
+  final List<String> theme = ['Jogadores', 'História', 'Títulos', 'Seleções', 'Clubes'];
 
   final List<Color> sliceColors = [
     Colors.greenAccent,
@@ -31,9 +31,9 @@ class _RouletteWheelState extends State<RouletteWheel> {
     super.initState();
 
     _group = RouletteGroup.uniform(
-      temas.length,
+      theme.length,
       colorBuilder: (index) => sliceColors[index],
-      textBuilder: (index) => temas[index],
+      textBuilder: (index) => theme[index],
       textStyleBuilder: (index) => const TextStyle(
         color: Colors.black,
         fontSize: 16,
@@ -62,8 +62,8 @@ class _RouletteWheelState extends State<RouletteWheel> {
       duration: const Duration(seconds: 3),
     );
 
-    final tema = _group.units[index].text;
-    widget.onFinish?.call(tema!);
+    final theme = _group.units[index].text;
+    widget.onFinish?.call(theme!);
 
     setState(() => isSpinning = false);
   }
@@ -86,7 +86,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
                 ),
               ),
               const Positioned(
-                top: 70,
+                top:110,
                 child: Icon(
                   Icons.arrow_drop_down,
                   size: 80,
