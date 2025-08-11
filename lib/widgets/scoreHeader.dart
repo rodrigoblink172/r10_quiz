@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/config/colors.dart';
 import 'package:r10_quiz/screens/ranking_screen.dart';
+import 'package:audioplayers/audioplayers.dart';
+
 
 class scoreHeader extends StatelessWidget {
   const scoreHeader({super.key});
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +24,17 @@ class scoreHeader extends StatelessWidget {
           child: Row(
             children: [
               GestureDetector(
-                onTap: () {
+                onTap: () async {
+                  final player = AudioPlayer();
+                  await player.play(AssetSource('sounds/hat.mp3'));
                   showDialog(
                     context: context,
                     barrierDismissible: true,
-                    builder: (context) {
+                    builder: (dialogContext) {
                       Future.delayed(const Duration(seconds: 3), () {
-                        Navigator.of(context).pop(true);
+                        if (Navigator.of(dialogContext).canPop()) {
+                          Navigator.of(dialogContext).pop(true);
+                        }
                       });
 
                       return const AlertDialog(
@@ -60,13 +68,17 @@ class scoreHeader extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () {
+                onTap: () async {
+                  final player = AudioPlayer();
+                  await player.play(AssetSource('sounds/coins.mp3'));
                   showDialog(
                     context: context,
                     barrierDismissible: true,
-                    builder: (context) {
+                    builder: (dialogContext) {
                       Future.delayed(const Duration(seconds: 3), () {
-                        Navigator.of(context).pop(true);
+                        if (Navigator.of(dialogContext).canPop()) {
+                          Navigator.of(dialogContext).pop(true);
+                        }
                       });
 
                       return const AlertDialog(

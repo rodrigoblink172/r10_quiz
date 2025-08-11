@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:roulette/roulette.dart';
+import 'package:audioplayers/audioplayers.dart';
+
 
 class RouletteWheel extends StatefulWidget {
   final void Function(String)? onFinish;
@@ -16,7 +18,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
   late RouletteGroup _group;
   bool isSpinning = false;
 
-  final List<String> theme = ['Jogadores', 'História', 'Títulos', 'Seleções', 'Clubes'];
+  final List<String> theme = ['Jogadores', 'História', 'Títulos', 'Seleções', 'Clubes', 'Regras'];
 
   final List<Color> sliceColors = [
     Colors.greenAccent,
@@ -24,11 +26,17 @@ class _RouletteWheelState extends State<RouletteWheel> {
     Colors.lightGreen,
     Colors.yellowAccent,
     Colors.yellow,
+    Colors.orange,
   ];
+
+  late final AudioPlayer _audioPlayer;
+
 
   @override
   void initState() {
     super.initState();
+
+    _audioPlayer = AudioPlayer();
 
     _group = RouletteGroup.uniform(
       theme.length,
@@ -47,6 +55,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
   @override
   void dispose() {
     _controller.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -59,7 +68,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
     await _controller.rollTo(
       index,
       offset: offset,
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 4),
     );
 
     final theme = _group.units[index].text;
@@ -103,8 +112,12 @@ class _RouletteWheelState extends State<RouletteWheel> {
           maintainAnimation: true,
           maintainState: true,
           child: ElevatedButton(
-            onPressed: _rollRoulette,
+            onPressed: () async {
+              await _audioPlayer.play(AssetSource('sounds/wheel_start.mp3'));
+              await _rollRoulette(); 
+            },
             child: const Text('Girar Roleta'),
+            
           ),
         ),
       ],
