@@ -1,0 +1,115 @@
+{
+  "category": "Clubes",
+  "questions": [
+    {
+      "id": "clubes_1",
+      "question": "Qual clube é conhecido como 'Los Blancos'?",
+      "options": [
+        { "id": "a", "text": "Real Madrid" },
+        { "id": "b", "text": "Barcelona" },
+        { "id": "c", "text": "Atlético de Madrid" },
+        { "id": "d", "text": "Valencia" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_2",
+      "question": "Qual clube brasileiro tem o apelido 'Rubro-Negro' mais famoso?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Atlético-MG" },
+        { "id": "c", "text": "Sport Recife" },
+        { "id": "d", "text": "Vitória" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_3",
+      "question": "Qual clube é chamado de 'Peixe'?",
+      "options": [
+        { "id": "a", "text": "Santos" },
+        { "id": "b", "text": "Vasco" },
+        { "id": "c", "text": "Fluminense" },
+        { "id": "d", "text": "Botafogo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_4",
+      "question": "Qual clube tem o apelido 'Galo'?",
+      "options": [
+        { "id": "a", "text": "Atlético-MG" },
+        { "id": "b", "text": "Coritiba" },
+        { "id": "c", "text": "Ceará" },
+        { "id": "d", "text": "Avaí" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_5",
+      "question": "Qual clube inglês é conhecido como 'Blues'?",
+      "options": [
+        { "id": "a", "text": "Chelsea" },
+        { "id": "b", "text": "Everton" },
+        { "id": "c", "text": "Leicester City" },
+        { "id": "d", "text": "Manchester City" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_6",
+      "question": "Qual clube italiano é chamado de 'Rossoneri'?",
+      "options": [
+        { "id": "a", "text": "Milan" },
+        { "id": "b", "text": "Inter de Milão" },
+        { "id": "c", "text": "Juventus" },
+        { "id": "d", "text": "Roma" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_7",
+      "question": "Qual clube é chamado de 'Timão'?",
+      "options": [
+        { "id": "a", "text": "Corinthians" },
+        { "id": "b", "text": "São Paulo" },
+        { "id": "c", "text": "Palmeiras" },
+        { "id": "d", "text": "Santos" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_8",
+      "question": "Qual clube argentino é conhecido como 'Xeneize'?",
+      "options": [
+        { "id": "a", "text": "Boca Juniors" },
+        { "id": "b", "text": "River Plate" },
+        { "id": "c", "text": "Independiente" },
+        { "id": "d", "text": "Racing" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_9",
+      "question": "Qual clube francês é conhecido como 'Les Parisiens'?",
+      "options": [
+        { "id": "a", "text": "Paris Saint-Germain" },
+        { "id": "b", "text": "Lyon" },
+        { "id": "c", "text": "Marseille" },
+        { "id": "d", "text": "Monaco" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "clubes_10",
+      "question": "Qual clube alemão é chamado de 'Bavarian Giants'?",
+      "options": [
+        { "id": "a", "text": "Bayern de Munique" },
+        { "id": "b", "text": "Borussia Dortmund" },
+        { "id": "c", "text": "RB Leipzig" },
+        { "id": "d", "text": "Schalke 04" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}

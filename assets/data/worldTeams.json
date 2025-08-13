@@ -1,0 +1,115 @@
+{
+  "category": "Seleções",
+  "questions": [
+    {
+      "id": "selecoes_1",
+      "question": "Qual seleção é conhecida como 'Azzurra'?",
+      "options": [
+        { "id": "a", "text": "Itália" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Espanha" },
+        { "id": "d", "text": "Alemanha" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_2",
+      "question": "Qual seleção é apelidada de 'Albiceleste'?",
+      "options": [
+        { "id": "a", "text": "Argentina" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Paraguai" },
+        { "id": "d", "text": "Chile" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_3",
+      "question": "Qual seleção é conhecida como 'La Roja'?",
+      "options": [
+        { "id": "a", "text": "Espanha" },
+        { "id": "b", "text": "Chile" },
+        { "id": "c", "text": "Peru" },
+        { "id": "d", "text": "Colômbia" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_4",
+      "question": "Quem venceu a Copa do Mundo de 2010?",
+      "options": [
+        { "id": "a", "text": "Espanha" },
+        { "id": "b", "text": "Holanda" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Brasil" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_5",
+      "question": "Qual seleção tem o apelido de 'Three Lions'?",
+      "options": [
+        { "id": "a", "text": "Inglaterra" },
+        { "id": "b", "text": "Escócia" },
+        { "id": "c", "text": "Irlanda" },
+        { "id": "d", "text": "País de Gales" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_6",
+      "question": "Quem venceu a Copa América de 2019?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Chile" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_7",
+      "question": "Quem venceu a Copa do Mundo de 2014?",
+      "options": [
+        { "id": "a", "text": "Alemanha" },
+        { "id": "b", "text": "Argentina" },
+        { "id": "c", "text": "Holanda" },
+        { "id": "d", "text": "Brasil" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_8",
+      "question": "Qual seleção é chamada de 'Celeste Olímpica'?",
+      "options": [
+        { "id": "a", "text": "Uruguai" },
+        { "id": "b", "text": "Argentina" },
+        { "id": "c", "text": "Paraguai" },
+        { "id": "d", "text": "Equador" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_9",
+      "question": "Quem venceu a Copa do Mundo de 2002?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Alemanha" },
+        { "id": "c", "text": "França" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_10",
+      "question": "Qual seleção africana alcançou as quartas de final em 2010?",
+      "options": [
+        { "id": "a", "text": "Gana" },
+        { "id": "b", "text": "Camarões" },
+        { "id": "c", "text": "Angola" },
+        { "id": "d", "text": "Africa do Sul" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}

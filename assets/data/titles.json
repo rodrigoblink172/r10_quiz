@@ -1,0 +1,115 @@
+{
+  "category": "Títulos",
+  "questions": [
+    {
+      "id": "titulos_1",
+      "question": "Qual clube tem mais títulos da Copa Libertadores?",
+      "options": [
+        { "id": "a", "text": "Independiente" },
+        { "id": "b", "text": "Boca Juniors" },
+        { "id": "c", "text": "River Plate" },
+        { "id": "d", "text": "São Paulo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_2",
+      "question": "Qual seleção tem mais títulos de Copas do Mundo?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Alemanha" },
+        { "id": "c", "text": "Itália" },
+        { "id": "d", "text": "Argentina" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_3",
+      "question": "Qual clube tem mais títulos da UEFA Champions League?",
+      "options": [
+        { "id": "a", "text": "Real Madrid" },
+        { "id": "b", "text": "Milan" },
+        { "id": "c", "text": "Bayern de Munique" },
+        { "id": "d", "text": "Barcelona" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_4",
+      "question": "Qual clube brasileiro tem mais títulos da Copa do Brasil?",
+      "options": [
+        { "id": "a", "text": "Cruzeiro" },
+        { "id": "b", "text": "Grêmio" },
+        { "id": "c", "text": "Palmeiras" },
+        { "id": "d", "text": "Corinthians" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_5",
+      "question": "Quem é o maior campeão da Premier League (era moderna)?",
+      "options": [
+        { "id": "a", "text": "Manchester United" },
+        { "id": "b", "text": "Liverpool" },
+        { "id": "c", "text": "Arsenal" },
+        { "id": "d", "text": "Chelsea" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_6",
+      "question": "Quem venceu a Euro 2016?",
+      "options": [
+        { "id": "a", "text": "Portugal" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Espanha" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_7",
+      "question": "Quem venceu a Copa Libertadores de 2022?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Palmeiras" },
+        { "id": "c", "text": "River Plate" },
+        { "id": "d", "text": "Athletico-PR" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_8",
+      "question": "Quem venceu a Copa América de 2021?",
+      "options": [
+        { "id": "a", "text": "Argentina" },
+        { "id": "b", "text": "Brasil" },
+        { "id": "c", "text": "Chile" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_9",
+      "question": "Qual clube brasileiro tem mais títulos do Brasileirão (pontos corridos + unificados)?",
+      "options": [
+        { "id": "a", "text": "Palmeiras" },
+        { "id": "b", "text": "Santos" },
+        { "id": "c", "text": "Flamengo" },
+        { "id": "d", "text": "Corinthians" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_10",
+      "question": "Quem venceu o Mundial de Clubes da FIFA em 2020?",
+      "options": [
+        { "id": "a", "text": "Bayern de Munique" },
+        { "id": "b", "text": "Tigres UANL" },
+        { "id": "c", "text": "Palmeiras" },
+        { "id": "d", "text": "Al Ahly" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}
