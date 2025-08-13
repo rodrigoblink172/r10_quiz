@@ -1,0 +1,614 @@
+{
+  "Jogadores": [
+    {
+      "id": "jogadores_1",
+      "text": "Quem é conhecido como 'Rei do Futebol'?",
+      "options": [
+        "Pelé",
+        "Maradona",
+        "Cristiano Ronaldo",
+        "Messi"
+      ]
+    },
+    {
+      "id": "jogadores_2",
+      "text": "Qual jogador ganhou 7 Bolas de Ouro até 2023?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Ronaldinho Gaúcho",
+        "Luka Modrić"
+      ]
+    },
+    {
+      "id": "jogadores_3",
+      "text": "Quem marcou o famoso gol de mão na Copa de 1986?",
+      "options": [
+        "Diego Maradona",
+        "Pelé",
+        "Thierry Henry",
+        "Rivaldo"
+      ]
+    },
+    {
+      "id": "jogadores_4",
+      "text": "Qual jogador é apelidado de 'Fenômeno'?",
+      "options": [
+        "Ronaldo Nazário",
+        "Romário",
+        "Adriano",
+        "Neymar"
+      ]
+    },
+    {
+      "id": "jogadores_5",
+      "text": "Quem é o maior artilheiro da Seleção Brasileira?",
+      "options": [
+        "Neymar",
+        "Pelé",
+        "Romário",
+        "Zico"
+      ]
+    },
+    {
+      "id": "jogadores_6",
+      "text": "Qual jogador é chamado de 'CR7'?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Kylian Mbappé",
+        "Gareth Bale",
+        "Karim Benzema"
+      ]
+    },
+    {
+      "id": "jogadores_7",
+      "text": "Quem é conhecido como 'O Bruxo'?",
+      "options": [
+        "Ronaldinho Gaúcho",
+        "Zinedine Zidane",
+        "Kaká",
+        "Andrés Iniesta"
+      ]
+    },
+    {
+      "id": "jogadores_8",
+      "text": "Quem marcou os gols da final da Copa de 2002 pelo Brasil?",
+      "options": [
+        "Ronaldo Nazário",
+        "Rivaldo",
+        "Ronaldinho",
+        "Cafu"
+      ]
+    },
+    {
+      "id": "jogadores_9",
+      "text": "Qual jogador popularizou o chute 'folha seca'?",
+      "options": [
+        "Didi",
+        "Roberto Carlos",
+        "Juninho Pernambucano",
+        "David Beckham"
+      ]
+    },
+    {
+      "id": "jogadores_10",
+      "text": "Qual brasileiro venceu o Prêmio Puskás em 2011?",
+      "options": [
+        "Neymar",
+        "Hulk",
+        "Robinho",
+        "Kaká"
+      ]
+    }
+  ],
+  "História": [
+    {
+      "id": "historia_1",
+      "text": "Em que ano ocorreu a primeira Copa do Mundo?",
+      "options": [
+        "1930",
+        "1928",
+        "1934",
+        "1940"
+      ]
+    },
+    {
+      "id": "historia_2",
+      "text": "Qual país sediou a Copa do Mundo de 1950?",
+      "options": [
+        "Brasil",
+        "Uruguai",
+        "Inglaterra",
+        "Suécia"
+      ]
+    },
+    {
+      "id": "historia_3",
+      "text": "Quem venceu a Copa do Mundo de 1998?",
+      "options": [
+        "França",
+        "Brasil",
+        "Alemanha",
+        "Itália"
+      ]
+    },
+    {
+      "id": "historia_4",
+      "text": "Quem fez o primeiro gol em Copas do Mundo?",
+      "options": [
+        "Lucien Laurent",
+        "Leônidas da Silva",
+        "Obdulio Varela",
+        "Guillermo Stábile"
+      ]
+    },
+    {
+      "id": "historia_5",
+      "text": "Qual foi o placar da final da Copa de 1950 (Maracanazo)?",
+      "options": [
+        "Uruguai 2 x 1 Brasil",
+        "Brasil 3 x 1 Uruguai",
+        "Uruguai 1 x 0 Brasil",
+        "Brasil 2 x 2 Uruguai"
+      ]
+    },
+    {
+      "id": "historia_6",
+      "text": "Quem venceu a Copa do Mundo de 2006?",
+      "options": [
+        "Itália",
+        "França",
+        "Alemanha",
+        "Brasil"
+      ]
+    },
+    {
+      "id": "historia_7",
+      "text": "Qual seleção tem mais títulos de Copas do Mundo?",
+      "options": [
+        "Brasil",
+        "Alemanha",
+        "Itália",
+        "Argentina"
+      ]
+    },
+    {
+      "id": "historia_8",
+      "text": "Quem organizou a primeira Copa do Mundo?",
+      "options": [
+        "FIFA",
+        "UEFA",
+        "CONMEBOL",
+        "COI"
+      ]
+    },
+    {
+      "id": "historia_9",
+      "text": "Qual Copa ficou conhecida como 'A Copa das Copas'?",
+      "options": [
+        "Brasil 2014",
+        "Alemanha 2006",
+        "México 1986",
+        "África do Sul 2010"
+      ]
+    },
+    {
+      "id": "historia_10",
+      "text": "Quem marcou o 'Gol do Século' em 1986?",
+      "options": [
+        "Diego Maradona",
+        "Pelé",
+        "Zico",
+        "Romário"
+      ]
+    }
+  ],
+  "Títulos": [
+    {
+      "id": "titulos_1",
+      "text": "Qual clube tem mais títulos da Copa Libertadores?",
+      "options": [
+        "Independiente",
+        "Boca Juniors",
+        "River Plate",
+        "São Paulo"
+      ]
+    },
+    {
+      "id": "titulos_2",
+      "text": "Qual seleção tem mais títulos de Copas do Mundo?",
+      "options": [
+        "Brasil",
+        "Alemanha",
+        "Itália",
+        "Argentina"
+      ]
+    },
+    {
+      "id": "titulos_3",
+      "text": "Qual clube tem mais títulos da UEFA Champions League?",
+      "options": [
+        "Real Madrid",
+        "Milan",
+        "Bayern de Munique",
+        "Barcelona"
+      ]
+    },
+    {
+      "id": "titulos_4",
+      "text": "Qual clube brasileiro tem mais títulos da Copa do Brasil?",
+      "options": [
+        "Cruzeiro",
+        "Grêmio",
+        "Palmeiras",
+        "Corinthians"
+      ]
+    },
+    {
+      "id": "titulos_5",
+      "text": "Quem é o maior campeão da Premier League (era moderna)?",
+      "options": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Chelsea"
+      ]
+    },
+    {
+      "id": "titulos_6",
+      "text": "Quem venceu a Euro 2016?",
+      "options": [
+        "Portugal",
+        "França",
+        "Alemanha",
+        "Espanha"
+      ]
+    },
+    {
+      "id": "titulos_7",
+      "text": "Quem venceu a Copa Libertadores de 2022?",
+      "options": [
+        "Flamengo",
+        "Palmeiras",
+        "River Plate",
+        "Athletico-PR"
+      ]
+    },
+    {
+      "id": "titulos_8",
+      "text": "Quem venceu a Copa América de 2021?",
+      "options": [
+        "Argentina",
+        "Brasil",
+        "Chile",
+        "Uruguai"
+      ]
+    },
+    {
+      "id": "titulos_9",
+      "text": "Qual clube brasileiro tem mais títulos do Brasileirão (pontos corridos + unificados)?",
+      "options": [
+        "Palmeiras",
+        "Santos",
+        "Flamengo",
+        "Corinthians"
+      ]
+    },
+    {
+      "id": "titulos_10",
+      "text": "Quem venceu o Mundial de Clubes da FIFA em 2020?",
+      "options": [
+        "Bayern de Munique",
+        "Tigres UANL",
+        "Palmeiras",
+        "Al Ahly"
+      ]
+    }
+  ],
+  "Seleções": [
+    {
+      "id": "selecoes_1",
+      "text": "Qual seleção é conhecida como 'Azzurra'?",
+      "options": [
+        "Itália",
+        "França",
+        "Espanha",
+        "Alemanha"
+      ]
+    },
+    {
+      "id": "selecoes_2",
+      "text": "Qual seleção é apelidada de 'Albiceleste'?",
+      "options": [
+        "Argentina",
+        "Uruguai",
+        "Paraguai",
+        "Chile"
+      ]
+    },
+    {
+      "id": "selecoes_3",
+      "text": "Qual seleção é conhecida como 'La Roja'?",
+      "options": [
+        "Espanha",
+        "Chile",
+        "Peru",
+        "Colômbia"
+      ]
+    },
+    {
+      "id": "selecoes_4",
+      "text": "Quem venceu a Copa do Mundo de 2010?",
+      "options": [
+        "Espanha",
+        "Holanda",
+        "Alemanha",
+        "Brasil"
+      ]
+    },
+    {
+      "id": "selecoes_5",
+      "text": "Qual seleção tem o apelido de 'Three Lions'?",
+      "options": [
+        "Inglaterra",
+        "Escócia",
+        "Irlanda",
+        "País de Gales"
+      ]
+    },
+    {
+      "id": "selecoes_6",
+      "text": "Quem venceu a Copa América de 2019?",
+      "options": [
+        "Brasil",
+        "Chile",
+        "Argentina",
+        "Uruguai"
+      ]
+    },
+    {
+      "id": "selecoes_7",
+      "text": "Quem venceu a Copa do Mundo de 2014?",
+      "options": [
+        "Alemanha",
+        "Argentina",
+        "Holanda",
+        "Brasil"
+      ]
+    },
+    {
+      "id": "selecoes_8",
+      "text": "Qual seleção é chamada de 'Celeste Olímpica'?",
+      "options": [
+        "Uruguai",
+        "Argentina",
+        "Paraguai",
+        "Equador"
+      ]
+    },
+    {
+      "id": "selecoes_9",
+      "text": "Quem venceu a Copa do Mundo de 2002?",
+      "options": [
+        "Brasil",
+        "Alemanha",
+        "França",
+        "Itália"
+      ]
+    },
+    {
+      "id": "selecoes_10",
+      "text": "Qual seleção africana alcançou as quartas de final em 2010?",
+      "options": [
+        "Gana",
+        "Camarões",
+        "Nigéria",
+        "Senegal"
+      ]
+    }
+  ],
+  "Clubes": [
+    {
+      "id": "clubes_1",
+      "text": "Qual clube é conhecido como 'Los Blancos'?",
+      "options": [
+        "Real Madrid",
+        "Barcelona",
+        "Atlético de Madrid",
+        "Valencia"
+      ]
+    },
+    {
+      "id": "clubes_2",
+      "text": "Qual clube brasileiro tem o apelido 'Rubro-Negro' mais famoso?",
+      "options": [
+        "Flamengo",
+        "Atlético-MG",
+        "Sport Recife",
+        "Vitória"
+      ]
+    },
+    {
+      "id": "clubes_3",
+      "text": "Qual clube é chamado de 'Peixe'?",
+      "options": [
+        "Santos",
+        "Vasco",
+        "Fluminense",
+        "Botafogo"
+      ]
+    },
+    {
+      "id": "clubes_4",
+      "text": "Qual clube tem o apelido 'Galo'?",
+      "options": [
+        "Atlético-MG",
+        "Coritiba",
+        "Ceará",
+        "Avaí"
+      ]
+    },
+    {
+      "id": "clubes_5",
+      "text": "Qual clube inglês é conhecido como 'Blues'?",
+      "options": [
+        "Chelsea",
+        "Everton",
+        "Leicester City",
+        "Manchester City"
+      ]
+    },
+    {
+      "id": "clubes_6",
+      "text": "Qual clube italiano é chamado de 'Rossoneri'?",
+      "options": [
+        "Milan",
+        "Inter de Milão",
+        "Juventus",
+        "Roma"
+      ]
+    },
+    {
+      "id": "clubes_7",
+      "text": "Qual clube é chamado de 'Timão'?",
+      "options": [
+        "Corinthians",
+        "São Paulo",
+        "Palmeiras",
+        "Santos"
+      ]
+    },
+    {
+      "id": "clubes_8",
+      "text": "Qual clube argentino é conhecido como 'Xeneize'?",
+      "options": [
+        "Boca Juniors",
+        "River Plate",
+        "Independiente",
+        "Racing"
+      ]
+    },
+    {
+      "id": "clubes_9",
+      "text": "Qual clube francês é conhecido como 'Les Parisiens'?",
+      "options": [
+        "Paris Saint-Germain",
+        "Lyon",
+        "Marseille",
+        "Monaco"
+      ]
+    },
+    {
+      "id": "clubes_10",
+      "text": "Qual clube alemão é chamado de 'Bavarian Giants'?",
+      "options": [
+        "Bayern de Munique",
+        "Borussia Dortmund",
+        "RB Leipzig",
+        "Schalke 04"
+      ]
+    }
+  ],
+  "Regras": [
+    {
+      "id": "regras_1",
+      "text": "Quantos jogadores cada time deve ter em campo no início da partida?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "id": "regras_2",
+      "text": "Quantos minutos tem um jogo de futebol (tempo regulamentar)?",
+      "options": [
+        "90",
+        "80",
+        "100",
+        "120"
+      ]
+    },
+    {
+      "id": "regras_3",
+      "text": "Quantas substituições são permitidas em competições oficiais modernas?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "id": "regras_4",
+      "text": "Qual a distância da marca do pênalti até a linha do gol?",
+      "options": [
+        "11 metros",
+        "10 metros",
+        "12 metros",
+        "9 metros"
+      ]
+    },
+    {
+      "id": "regras_5",
+      "text": "Quantos cartões vermelhos um mesmo jogador pode receber em um jogo?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Nenhum"
+      ]
+    },
+    {
+      "id": "regras_6",
+      "text": "Quando a bola é considerada fora de jogo (out of play)?",
+      "options": [
+        "Quando cruza completamente a linha",
+        "Quando encosta na trave",
+        "Quando o goleiro segura",
+        "Quando bate na rede lateral"
+      ]
+    },
+    {
+      "id": "regras_7",
+      "text": "Qual parte do corpo não pode tocar a bola (exceto o goleiro em sua área)?",
+      "options": [
+        "Mãos",
+        "Cabeça",
+        "Ombro",
+        "Coxa"
+      ]
+    },
+    {
+      "id": "regras_8",
+      "text": "Qual é o nome da regra que impede um jogador adiantado de receber a bola?",
+      "options": [
+        "Impedimento",
+        "Lateral",
+        "Escanteio",
+        "Recuo"
+      ]
+    },
+    {
+      "id": "regras_9",
+      "text": "Qual o tamanho oficial da bola usada no futebol profissional?",
+      "options": [
+        "Nº 5",
+        "Nº 4",
+        "Nº 6",
+        "Nº 3"
+      ]
+    },
+    {
+      "id": "regras_10",
+      "text": "Em qual situação o árbitro pode encerrar a partida antes do tempo por segurança?",
+      "options": [
+        "Risco à segurança",
+        "Chuva forte",
+        "Sem bolas de reposição",
+        "Pedido de um time"
+      ]
+    }
+  ]
+}
