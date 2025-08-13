@@ -1,0 +1,115 @@
+{
+  "category": "Regras",
+  "questions": [
+    {
+      "id": "regras_1",
+      "question": "Quantos jogadores cada time deve ter em campo no início da partida?",
+      "options": [
+        { "id": "a", "text": "11" },
+        { "id": "b", "text": "10" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "12" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_2",
+      "question": "Quantos minutos tem um jogo de futebol (tempo regulamentar)?",
+      "options": [
+        { "id": "a", "text": "90" },
+        { "id": "b", "text": "80" },
+        { "id": "c", "text": "100" },
+        { "id": "d", "text": "120" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_3",
+      "question": "Quantas substituições são permitidas em competições oficiais modernas?",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "6" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_4",
+      "question": "Qual a distância da marca do pênalti até a linha do gol?",
+      "options": [
+        { "id": "a", "text": "11 metros" },
+        { "id": "b", "text": "10 metros" },
+        { "id": "c", "text": "12 metros" },
+        { "id": "d", "text": "9 metros" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_5",
+      "question": "Quantos cartões vermelhos um mesmo jogador pode receber em um jogo?",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "Nenhum" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_6",
+      "question": "Quando a bola é considerada fora de jogo (out of play)?",
+      "options": [
+        { "id": "a", "text": "Quando cruza completamente a linha" },
+        { "id": "b", "text": "Quando encosta na trave" },
+        { "id": "c", "text": "Quando o goleiro segura" },
+        { "id": "d", "text": "Quando bate na rede lateral" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_7",
+      "question": "Qual parte do corpo não pode tocar a bola (exceto o goleiro em sua área)?",
+      "options": [
+        { "id": "a", "text": "Mãos" },
+        { "id": "b", "text": "Cabeça" },
+        { "id": "c", "text": "Ombro" },
+        { "id": "d", "text": "Coxa" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_8",
+      "question": "Qual é o nome da regra que impede um jogador adiantado de receber a bola?",
+      "options": [
+        { "id": "a", "text": "Impedimento" },
+        { "id": "b", "text": "Lateral" },
+        { "id": "c", "text": "Escanteio" },
+        { "id": "d", "text": "Recuo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_9",
+      "question": "Qual o tamanho oficial da bola usada no futebol profissional?",
+      "options": [
+        { "id": "a", "text": "Nº 5" },
+        { "id": "b", "text": "Nº 4" },
+        { "id": "c", "text": "Nº 6" },
+        { "id": "d", "text": "Nº 3" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_10",
+      "question": "Em qual situação o árbitro pode encerrar a partida antes do tempo por segurança?",
+      "options": [
+        { "id": "a", "text": "Risco à segurança" },
+        { "id": "b", "text": "Chuva forte" },
+        { "id": "c", "text": "Sem bolas de reposição" },
+        { "id": "d", "text": "Pedido de um time" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}

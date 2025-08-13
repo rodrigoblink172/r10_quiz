@@ -1,0 +1,115 @@
+{
+  "category": "Jogadores",
+  "questions": [
+    {
+      "id": "jogadores_1",
+      "question": "Quem é conhecido como 'Rei do Futebol'?",
+      "options": [
+        { "id": "a", "text": "Pelé" },
+        { "id": "b", "text": "Maradona" },
+        { "id": "c", "text": "Cristiano Ronaldo" },
+        { "id": "d", "text": "Messi" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_2",
+      "question": "Qual jogador ganhou 7 Bolas de Ouro até 2023?",
+      "options": [
+        { "id": "a", "text": "Lionel Messi" },
+        { "id": "b", "text": "Cristiano Ronaldo" },
+        { "id": "c", "text": "Ronaldinho Gaúcho" },
+        { "id": "d", "text": "Luka Modrić" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_3",
+      "question": "Quem marcou o famoso gol de mão na Copa de 1986?",
+      "options": [
+        { "id": "a", "text": "Diego Maradona" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Thierry Henry" },
+        { "id": "d", "text": "Rivaldo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_4",
+      "question": "Qual jogador é apelidado de 'Fenômeno'?",
+      "options": [
+        { "id": "a", "text": "Ronaldo Nazário" },
+        { "id": "b", "text": "Romário" },
+        { "id": "c", "text": "Adriano" },
+        { "id": "d", "text": "Neymar" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_5",
+      "question": "Quem é o maior artilheiro da Seleção Brasileira?",
+      "options": [
+        { "id": "a", "text": "Neymar" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Romário" },
+        { "id": "d", "text": "Zico" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_6",
+      "question": "Qual jogador é chamado de 'CR7'?",
+      "options": [
+        { "id": "a", "text": "Cristiano Ronaldo" },
+        { "id": "b", "text": "Kylian Mbappé" },
+        { "id": "c", "text": "Gareth Bale" },
+        { "id": "d", "text": "Karim Benzema" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_7",
+      "question": "Quem é conhecido como 'O Bruxo'?",
+      "options": [
+        { "id": "a", "text": "Ronaldinho Gaúcho" },
+        { "id": "b", "text": "Zinedine Zidane" },
+        { "id": "c", "text": "Kaká" },
+        { "id": "d", "text": "Andrés Iniesta" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_8",
+      "question": "Quem marcou os gols da final da Copa de 2002 pelo Brasil?",
+      "options": [
+        { "id": "a", "text": "Ronaldo Nazário" },
+        { "id": "b", "text": "Rivaldo" },
+        { "id": "c", "text": "Ronaldinho" },
+        { "id": "d", "text": "Cafu" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_9",
+      "question": "Qual jogador popularizou o chute 'folha seca'?",
+      "options": [
+        { "id": "a", "text": "Didi" },
+        { "id": "b", "text": "Roberto Carlos" },
+        { "id": "c", "text": "Juninho Pernambucano" },
+        { "id": "d", "text": "David Beckham" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_10",
+      "question": "Qual brasileiro venceu o Prêmio Puskás em 2011?",
+      "options": [
+        { "id": "a", "text": "Neymar" },
+        { "id": "b", "text": "Hulk" },
+        { "id": "c", "text": "Robinho" },
+        { "id": "d", "text": "Kaká" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "category": "História",
+  "questions": [
+    {
+      "id": "historia_1",
+      "question": "Em que ano ocorreu a primeira Copa do Mundo?",
+      "options": [
+        { "id": "a", "text": "1930" },
+        { "id": "b", "text": "1928" },
+        { "id": "c", "text": "1934" },
+        { "id": "d", "text": "1940" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_2",
+      "question": "Qual país sediou a Copa do Mundo de 1950?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Inglaterra" },
+        { "id": "d", "text": "Suécia" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_3",
+      "question": "Quem venceu a Copa do Mundo de 1998?",
+      "options": [
+        { "id": "a", "text": "França" },
+        { "id": "b", "text": "Brasil" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_4",
+      "question": "Quem fez o primeiro gol em Copas do Mundo?",
+      "options": [
+        { "id": "a", "text": "Lucien Laurent" },
+        { "id": "b", "text": "Leônidas da Silva" },
+        { "id": "c", "text": "Obdulio Varela" },
+        { "id": "d", "text": "Guillermo Stábile" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_5",
+      "question": "Qual foi o placar da final da Copa de 1950 (Maracanazo)?",
+      "options": [
+        { "id": "a", "text": "Uruguai 2 x 1 Brasil" },
+        { "id": "b", "text": "Brasil 3 x 1 Uruguai" },
+        { "id": "c", "text": "Uruguai 1 x 0 Brasil" },
+        { "id": "d", "text": "Brasil 2 x 2 Uruguai" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_6",
+      "question": "Quem venceu a Copa do Mundo de 2006?",
+      "options": [
+        { "id": "a", "text": "Itália" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Brasil" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_7",
+      "question": "Qual seleção tem mais títulos de Copas do Mundo?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Alemanha" },
+        { "id": "c", "text": "Itália" },
+        { "id": "d", "text": "Argentina" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_8",
+      "question": "Quem organizou a primeira Copa do Mundo?",
+      "options": [
+        { "id": "a", "text": "FIFA" },
+        { "id": "b", "text": "UEFA" },
+        { "id": "c", "text": "CONMEBOL" },
+        { "id": "d", "text": "COI" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_9",
+      "question": "Qual Copa ficou conhecida como 'A Copa das Copas'?",
+      "options": [
+        { "id": "a", "text": "Brasil 2014" },
+        { "id": "b", "text": "Alemanha 2006" },
+        { "id": "c", "text": "México 1986" },
+        { "id": "d", "text": "África do Sul 2010" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_10",
+      "question": "Quem marcou o 'Gol do Século' em 1986?",
+      "options": [
+        { "id": "a", "text": "Diego Maradona" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Zico" },
+        { "id": "d", "text": "Romário" }
+      ],
+      "correct_answer_id": "a"
+    }
+  ]
+}

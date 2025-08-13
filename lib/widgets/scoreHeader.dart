@@ -1,7 +1,7 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/config/colors.dart';
 import 'package:r10_quiz/screens/ranking_screen.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 
 class scoreHeader extends StatelessWidget {
