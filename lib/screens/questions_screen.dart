@@ -1,9 +1,13 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:r10_quiz/screens/ronaldinho_fail.dart';
+import 'package:r10_quiz/screens/ronaldinho_win.dart';
 import 'package:r10_quiz/widgets/app_shell.dart';
 import 'package:r10_quiz/widgets/scoreHeader.dart';
 import 'package:r10_quiz/models/questions.dart';
 import 'package:r10_quiz/data/question_repository.dart';
+import 'package:r10_quiz/controllers/rewards_controller.dart';
+
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({
@@ -33,6 +37,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   void initState() {
     super.initState();
+    RewardsController.instance.startNewGame();
     _sessionSeed = DateTime.now().millisecondsSinceEpoch % 1000000;
     _futurePack = _repo.loadFromAsset(_assetPathForCategory(widget.category));
   }
@@ -88,12 +93,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
       if (isCorrect) _score++;
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(isCorrect ? 'Acertou! 🎯' : 'Errou 😅'),
-        duration: const Duration(milliseconds: 800),
-      ),
-    );
+    //RewardsController.instance.registerAnswer(isCorrect: isCorrect);
+
+
+    
   }
 
   void _next(QuestionPack pack) {
@@ -110,23 +113,28 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   void _finish(QuestionPack pack) async {
-    final total = pack.questions.length;
-    await showDialog<void>(
-      context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('Fim do Quiz'),
-        content: Text('Você acertou $_score de $total perguntas.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('OK'),
-          ),
-        ],
-      ),
-    );
-    if (!mounted) return;
-    Navigator.of(context).pop();
-  }
+  final int total = pack.questions.length; 
+  RewardsController.instance.registerFinalScore(_score);
+
+  if (!mounted) return;
+
+  final Widget result = _score == 0
+      ? const RonaldinhoFailScreen()
+      : RonaldinhoWinScreen( 
+          correct: _score,
+          total: total,
+      );
+
+  await Navigator.of(context).pushReplacement(
+    MaterialPageRoute(
+      builder: (_) => result,
+      settings: const RouteSettings(name: '/quiz_result'),
+    ),
+  );
+}
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -191,6 +199,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       }
                     }
 
+                    
+
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: _OptionTile(
@@ -198,6 +208,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         onTap: () => _onSelect(q, opt),
                         borderColor: border,
                         enabled: !_locked,
+                        isCorrectForRipple: isCorrect,
                       ),
                     );
                   }),
@@ -294,15 +305,28 @@ class _OptionTile extends StatelessWidget {
     required this.onTap,
     this.borderColor,
     this.enabled = true,
+    required this.isCorrectForRipple,
   });
 
   final String label;
   final VoidCallback onTap;
   final Color? borderColor;
   final bool enabled;
+  final bool isCorrectForRipple;
 
   @override
   Widget build(BuildContext context) {
+    // Cor do efeito ao clicar
+    final overlay = MaterialStateProperty.resolveWith<Color?>((states) {
+      if (states.contains(MaterialState.pressed)) {
+        return (isCorrectForRipple ? Colors.green : Colors.red).withOpacity(0.80);
+      }
+      if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
+        return Colors.black12; // opcional
+      }
+      return null;
+    });
+
     return Material(
       color: Colors.white,
       borderRadius: BorderRadius.circular(12),
@@ -310,6 +334,7 @@ class _OptionTile extends StatelessWidget {
       child: InkWell(
         onTap: enabled ? onTap : null,
         borderRadius: BorderRadius.circular(12),
+        overlayColor: overlay,        // << AQUI COLORIMOS O RIPPLE
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
           decoration: BoxDecoration(

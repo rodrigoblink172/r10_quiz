@@ -13,7 +13,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       elevation: 2,
       backgroundColor: AppColors.header,
-      actions: [IconButton(icon: Icon(Icons.circle),
+      actions: [IconButton(icon: const Icon(Icons.circle),
       onPressed: (){
         Navigator.pushNamed(context, '/settings');
       },

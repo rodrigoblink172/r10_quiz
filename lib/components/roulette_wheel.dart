@@ -45,8 +45,8 @@ class _RouletteWheelState extends State<RouletteWheel> {
     super.initState();
 
     assert(
-    sliceColors.length == themes.length,
-    'sliceColors e themes precisam ter o mesmo tamanho',
+      sliceColors.length == themes.length,
+      'sliceColors e themes precisam ter o mesmo tamanho',
     );
 
     _audioPlayer = AudioPlayer();
@@ -121,14 +121,14 @@ class _RouletteWheelState extends State<RouletteWheel> {
             builder: (context, constraints) {
               // A roleta desenha um círculo ocupando o menor lado disponível.
               final double wheelSize =
-              min(constraints.maxWidth, constraints.maxHeight);
+                  min(constraints.maxWidth, constraints.maxHeight);
               final double radius = wheelSize / 2;
 
               // Queremos posicionar a seta a partir do CENTRO, para cima.
               // offsetY negativo sobe a seta. Consideramos metade da seta,
               // para a ponta encostar na borda com uma folga (edgeGap).
               final double pointerOffsetY =
-              -(radius + edgeGap - (pointerSize / 2));
+                  -(radius + edgeGap - (pointerSize / 2)) - 50;
 
               return Stack(
                 alignment: Alignment.center,
@@ -162,19 +162,30 @@ class _RouletteWheelState extends State<RouletteWheel> {
           maintainAnimation: true,
           maintainState: true,
           child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF4F378A),
+              foregroundColor: Colors.white,
+              minimumSize: const Size(188, 50), // Tamanho mínimo
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30), // Borda arredondada
+              ),
+              elevation: 4, // Sombra
+            ),
             onPressed: () async {
               // Tenta tocar o áudio; se falhar, apenas ignora e gira.
               try {
                 await _audioPlayer.play(
                   AssetSource('sounds/wheel_start.mp3'),
                 );
-              } catch (e
-              ) {
+              } catch (e) {
                 debugPrint('Falha ao tocar áudio: $e');
               }
               await _rollRoulette();
             },
-            child: const Text('Girar Roleta'),
+            child: const Text(
+              'GIRAR ROLETA',
+              style: TextStyle(fontSize: 20),
+            ),
           ),
         ),
       ],
