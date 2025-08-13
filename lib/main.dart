@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:r10_quiz/screens/r10_screen.dart';
 
 void main() {
-  runApp(const Hyrule());
+  runApp(const R10());
 }
 
-class Hyrule extends StatelessWidget {
-  const Hyrule({super.key});
+class R10 extends StatelessWidget {
+  const R10({super.key});
 
   @override
   Widget build(BuildContext context) {
