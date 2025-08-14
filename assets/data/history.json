@@ -110,6 +110,226 @@
         { "id": "d", "text": "Romário" }
       ],
       "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_11",
+      "question": "Qual seleção foi vice-campeã da Copa do Mundo de 1950?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Suécia" },
+        { "id": "d", "text": "Espanha" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_12",
+      "question": "Quem é o maior artilheiro da história das Copas do Mundo?",
+      "options": [
+        { "id": "a", "text": "Miroslav Klose" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Ronaldo Fenômeno" },
+        { "id": "d", "text": "Just Fontaine" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_13",
+      "question": "Em que país foi realizada a Copa do Mundo de 2002?",
+      "options": [
+        { "id": "a", "text": "Japão e Coreia do Sul" },
+        { "id": "b", "text": "Alemanha" },
+        { "id": "c", "text": "França" },
+        { "id": "d", "text": "Estados Unidos" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_14",
+      "question": "Qual jogador ficou conhecido como 'Rei do Futebol'?",
+      "options": [
+        { "id": "a", "text": "Pelé" },
+        { "id": "b", "text": "Diego Maradona" },
+        { "id": "c", "text": "Johan Cruyff" },
+        { "id": "d", "text": "Zico" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_15",
+      "question": "Qual seleção venceu a Copa do Mundo de 2014?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Alemanha" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Espanha" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_16",
+      "question": "Quem marcou o gol da vitória da Espanha na final da Copa de 2010?",
+      "options": [
+        { "id": "a", "text": "David Villa" },
+        { "id": "b", "text": "Andrés Iniesta" },
+        { "id": "c", "text": "Fernando Torres" },
+        { "id": "d", "text": "Xavi" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_17",
+      "question": "Qual país sediou a Copa do Mundo de 1994?",
+      "options": [
+        { "id": "a", "text": "Estados Unidos" },
+        { "id": "b", "text": "México" },
+        { "id": "c", "text": "França" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_18",
+      "question": "Quem foi o técnico da seleção brasileira no pentacampeonato de 2002?",
+      "options": [
+        { "id": "a", "text": "Luiz Felipe Scolari" },
+        { "id": "b", "text": "Carlos Alberto Parreira" },
+        { "id": "c", "text": "Zagallo" },
+        { "id": "d", "text": "Tite" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_19",
+      "question": "Qual jogador foi eleito o melhor do mundo pela FIFA em 1995?",
+      "options": [
+        { "id": "a", "text": "George Weah" },
+        { "id": "b", "text": "Roberto Baggio" },
+        { "id": "c", "text": "Romário" },
+        { "id": "d", "text": "Rivaldo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_20",
+      "question": "Qual clube brasileiro revelou o jogador Neymar?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Santos" },
+        { "id": "c", "text": "Palmeiras" },
+        { "id": "d", "text": "São Paulo" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_21",
+      "question": "Quem marcou o gol de mão conhecido como 'A Mão de Deus'?",
+      "options": [
+        { "id": "a", "text": "Lionel Messi" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Diego Maradona" },
+        { "id": "d", "text": "Gabriel Batistuta" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "historia_22",
+      "question": "Qual país sediou a Copa do Mundo de 1982?",
+      "options": [
+        { "id": "a", "text": "Itália" },
+        { "id": "b", "text": "Espanha" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "México" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_23",
+      "question": "Em que ano o Brasil foi campeão mundial pela primeira vez?",
+      "options": [
+        { "id": "a", "text": "1950" },
+        { "id": "b", "text": "1954" },
+        { "id": "c", "text": "1958" },
+        { "id": "d", "text": "1962" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "historia_24",
+      "question": "Quem é o maior artilheiro da história da seleção brasileira?",
+      "options": [
+        { "id": "a", "text": "Ronaldo Fenômeno" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Neymar" },
+        { "id": "d", "text": "Romário" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "historia_25",
+      "question": "Qual seleção é conhecida como 'Azzurra'?",
+      "options": [
+        { "id": "a", "text": "França" },
+        { "id": "b", "text": "Itália" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_26",
+      "question": "Qual jogador ganhou a Bola de Ouro da Copa do Mundo de 2014?",
+      "options": [
+        { "id": "a", "text": "Lionel Messi" },
+        { "id": "b", "text": "Thomas Müller" },
+        { "id": "c", "text": "James Rodríguez" },
+        { "id": "d", "text": "Manuel Neuer" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_27",
+      "question": "Qual clube foi campeão da primeira edição da Liga dos Campeões da UEFA?",
+      "options": [
+        { "id": "a", "text": "Real Madrid" },
+        { "id": "b", "text": "Milan" },
+        { "id": "c", "text": "Benfica" },
+        { "id": "d", "text": "Barcelona" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_28",
+      "question": "Quem foi o capitão da França na conquista da Copa de 1998?",
+      "options": [
+        { "id": "a", "text": "Zinedine Zidane" },
+        { "id": "b", "text": "Didier Deschamps" },
+        { "id": "c", "text": "Laurent Blanc" },
+        { "id": "d", "text": "Marcel Desailly" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "historia_29",
+      "question": "Qual país venceu a primeira edição da Eurocopa em 1960?",
+      "options": [
+        { "id": "a", "text": "União Soviética" },
+        { "id": "b", "text": "Espanha" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "França" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "historia_30",
+      "question": "Quem foi o técnico da Alemanha na conquista da Copa do Mundo de 2014?",
+      "options": [
+        { "id": "a", "text": "Joachim Löw" },
+        { "id": "b", "text": "Jurgen Klinsmann" },
+        { "id": "c", "text": "Franz Beckenbauer" },
+        { "id": "d", "text": "Hansi Flick" }
+      ],
+      "correct_answer_id": "a"
     }
   ]
 }

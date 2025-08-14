@@ -110,6 +110,226 @@
         { "id": "d", "text": "Kaká" }
       ],
       "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_11",
+      "question": "Qual jogador argentino é conhecido como 'La Pulga'?",
+      "options": [
+        { "id": "a", "text": "Diego Maradona" },
+        { "id": "b", "text": "Sergio Agüero" },
+        { "id": "c", "text": "Lionel Messi" },
+        { "id": "d", "text": "Ángel Di María" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "jogadores_12",
+      "question": "Qual jogador italiano é lembrado por perder um pênalti na final da Copa de 1994?",
+      "options": [
+        { "id": "a", "text": "Franco Baresi" },
+        { "id": "b", "text": "Roberto Baggio" },
+        { "id": "c", "text": "Paolo Maldini" },
+        { "id": "d", "text": "Alessandro Del Piero" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "jogadores_13",
+      "question": "Qual jogador é conhecido pelo apelido 'King Eric' no Manchester United?",
+      "options": [
+        { "id": "a", "text": "Eric Cantona" },
+        { "id": "b", "text": "David Beckham" },
+        { "id": "c", "text": "Ryan Giggs" },
+        { "id": "d", "text": "Paul Scholes" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_14",
+      "question": "Qual jogador francês marcou dois gols na final da Copa de 1998?",
+      "options": [
+        { "id": "a", "text": "Thierry Henry" },
+        { "id": "b", "text": "Didier Deschamps" },
+        { "id": "c", "text": "David Trezeguet" },
+        { "id": "d", "text": "Zinedine Zidane" }
+      ],
+      "correct_answer_id": "d"
+    },
+    {
+      "id": "jogadores_15",
+      "question": "Qual atacante sueco é conhecido por seu estilo polêmico e gols acrobáticos?",
+      "options": [
+        { "id": "a", "text": "Henrik Larsson" },
+        { "id": "b", "text": "Zlatan Ibrahimović" },
+        { "id": "c", "text": "Fredrik Ljungberg" },
+        { "id": "d", "text": "Emil Forsberg" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "jogadores_16",
+      "question": "Quem é o maior artilheiro da história da Champions League?",
+      "options": [
+        { "id": "a", "text": "Karim Benzema" },
+        { "id": "b", "text": "Cristiano Ronaldo" },
+        { "id": "c", "text": "Lionel Messi" },
+        { "id": "d", "text": "Robert Lewandowski" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "jogadores_17",
+      "question": "Qual jogador inglês ficou conhecido como 'Becks'?",
+      "options": [
+        { "id": "a", "text": "David Beckham" },
+        { "id": "b", "text": "Frank Lampard" },
+        { "id": "c", "text": "Steven Gerrard" },
+        { "id": "d", "text": "Wayne Rooney" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_18",
+      "question": "Qual jogador italiano é famoso pela comemoração 'Panenka' na Euro de 1976?",
+      "options": [
+        { "id": "a", "text": "Roberto Baggio" },
+        { "id": "b", "text": "Andrea Pirlo" },
+        { "id": "c", "text": "Nenhum, foi Antonín Panenka" },
+        { "id": "d", "text": "Francesco Totti" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "jogadores_19",
+      "question": "Quem é o maior artilheiro da história da seleção portuguesa?",
+      "options": [
+        { "id": "a", "text": "Luís Figo" },
+        { "id": "b", "text": "Eusébio" },
+        { "id": "c", "text": "Cristiano Ronaldo" },
+        { "id": "d", "text": "Nani" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "jogadores_20",
+      "question": "Qual jogador brasileiro ficou famoso pelo drible 'elástico'?",
+      "options": [
+        { "id": "a", "text": "Neymar" },
+        { "id": "b", "text": "Pelé" },
+        { "id": "c", "text": "Ronaldinho Gaúcho" },
+        { "id": "d", "text": "Rivelino" }
+      ],
+      "correct_answer_id": "d"
+    },
+    {
+      "id": "jogadores_21",
+      "question": "Qual goleiro alemão foi eleito o melhor jogador da Copa de 2002?",
+      "options": [
+        { "id": "a", "text": "Oliver Kahn" },
+        { "id": "b", "text": "Manuel Neuer" },
+        { "id": "c", "text": "Sepp Maier" },
+        { "id": "d", "text": "Jens Lehmann" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_22",
+      "question": "Qual jogador polonês se destacou como artilheiro no Bayern de Munique?",
+      "options": [
+        { "id": "a", "text": "Robert Lewandowski" },
+        { "id": "b", "text": "Jakub Błaszczykowski" },
+        { "id": "c", "text": "Grzegorz Lato" },
+        { "id": "d", "text": "Arkadiusz Milik" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_23",
+      "question": "Qual ex-jogador brasileiro é conhecido como 'O Baixinho'?",
+      "options": [
+        { "id": "a", "text": "Romário" },
+        { "id": "b", "text": "Garrincha" },
+        { "id": "c", "text": "Rivaldo" },
+        { "id": "d", "text": "Bebeto" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_24",
+      "question": "Qual jogador argentino é conhecido como 'El Apache'?",
+      "options": [
+        { "id": "a", "text": "Carlos Tévez" },
+        { "id": "b", "text": "Javier Mascherano" },
+        { "id": "c", "text": "Sergio Agüero" },
+        { "id": "d", "text": "Ángel Di María" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_25",
+      "question": "Qual jogador holandês ficou famoso pelo 'drible da vaca' invertido, chamado 'Cruyff Turn'?",
+      "options": [
+        { "id": "a", "text": "Marco van Basten" },
+        { "id": "b", "text": "Ruud Gullit" },
+        { "id": "c", "text": "Johan Cruyff" },
+        { "id": "d", "text": "Arjen Robben" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "jogadores_26",
+      "question": "Quem é o maior artilheiro da história do Paris Saint-Germain?",
+      "options": [
+        { "id": "a", "text": "Kylian Mbappé" },
+        { "id": "b", "text": "Zlatan Ibrahimović" },
+        { "id": "c", "text": "Edinson Cavani" },
+        { "id": "d", "text": "Neymar" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_27",
+      "question": "Qual atacante uruguaio é conhecido por polêmicas mordidas durante jogos?",
+      "options": [
+        { "id": "a", "text": "Diego Forlán" },
+        { "id": "b", "text": "Luis Suárez" },
+        { "id": "c", "text": "Edinson Cavani" },
+        { "id": "d", "text": "Sebastián Abreu" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "jogadores_28",
+      "question": "Qual jogador foi eleito o melhor do mundo em 2007?",
+      "options": [
+        { "id": "a", "text": "Kaká" },
+        { "id": "b", "text": "Cristiano Ronaldo" },
+        { "id": "c", "text": "Lionel Messi" },
+        { "id": "d", "text": "Ronaldinho Gaúcho" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "jogadores_29",
+      "question": "Qual ex-jogador camaronês ficou famoso pelo lema 'Indomável'?",
+      "options": [
+        { "id": "a", "text": "Samuel Eto'o" },
+        { "id": "b", "text": "Roger Milla" },
+        { "id": "c", "text": "Alex Song" },
+        { "id": "d", "text": "Geremi" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "jogadores_30",
+      "question": "Qual jogador alemão marcou o gol do título na final da Copa de 2014?",
+      "options": [
+        { "id": "a", "text": "Thomas Müller" },
+        { "id": "b", "text": "Mario Götze" },
+        { "id": "c", "text": "Miroslav Klose" },
+        { "id": "d", "text": "Bastian Schweinsteiger" }
+      ],
+      "correct_answer_id": "b"
     }
   ]
 }

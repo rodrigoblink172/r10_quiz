@@ -110,6 +110,226 @@
         { "id": "d", "text": "Al Ahly" }
       ],
       "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_11",
+      "question": "Quem venceu a Copa Libertadores de 2021?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Palmeiras" },
+        { "id": "c", "text": "River Plate" },
+        { "id": "d", "text": "Atlético Mineiro" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_12",
+      "question": "Quem venceu a Copa Africana de Nações de 2019?",
+      "options": [
+        { "id": "a", "text": "Senegal" },
+        { "id": "b", "text": "Argélia" },
+        { "id": "c", "text": "Egito" },
+        { "id": "d", "text": "Nigéria" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_13",
+      "question": "Quem foi campeão da Copa do Mundo de 2018?",
+      "options": [
+        { "id": "a", "text": "Croácia" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Bélgica" },
+        { "id": "d", "text": "Inglaterra" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_14",
+      "question": "Qual clube venceu a Liga dos Campeões da UEFA 2019/20?",
+      "options": [
+        { "id": "a", "text": "Bayern de Munique" },
+        { "id": "b", "text": "Paris Saint-Germain" },
+        { "id": "c", "text": "Liverpool" },
+        { "id": "d", "text": "Manchester City" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_15",
+      "question": "Quem venceu a Copa do Mundo Sub-20 de 2023?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Itália" },
+        { "id": "d", "text": "Argentina" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_16",
+      "question": "Qual clube venceu a Copa do Brasil em 2022?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Corinthians" },
+        { "id": "c", "text": "Atlético Paranaense" },
+        { "id": "d", "text": "Palmeiras" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_17",
+      "question": "Quem conquistou a Liga Europa da UEFA 2021/22?",
+      "options": [
+        { "id": "a", "text": "Eintracht Frankfurt" },
+        { "id": "b", "text": "Rangers" },
+        { "id": "c", "text": "Sevilla" },
+        { "id": "d", "text": "Villarreal" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_18",
+      "question": "Qual seleção venceu a Copa do Mundo de 2006?",
+      "options": [
+        { "id": "a", "text": "Itália" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Brasil" },
+        { "id": "d", "text": "Alemanha" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_19",
+      "question": "Quem foi campeão da Champions League 2017/18?",
+      "options": [
+        { "id": "a", "text": "Liverpool" },
+        { "id": "b", "text": "Real Madrid" },
+        { "id": "c", "text": "Barcelona" },
+        { "id": "d", "text": "Juventus" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_20",
+      "question": "Qual clube brasileiro venceu a Copa Sul-Americana em 2021?",
+      "options": [
+        { "id": "a", "text": "Athletico Paranaense" },
+        { "id": "b", "text": "São Paulo" },
+        { "id": "c", "text": "Ceará" },
+        { "id": "d", "text": "Fluminense" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_21",
+      "question": "Qual seleção ganhou a Copa das Confederações de 2013?",
+      "options": [
+        { "id": "a", "text": "Espanha" },
+        { "id": "b", "text": "Brasil" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_22",
+      "question": "Quem venceu o Campeonato Brasileiro Série A de 2020?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "Internacional" },
+        { "id": "c", "text": "São Paulo" },
+        { "id": "d", "text": "Atlético Mineiro" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_23",
+      "question": "Qual clube venceu a Libertadores de 2019?",
+      "options": [
+        { "id": "a", "text": "Flamengo" },
+        { "id": "b", "text": "River Plate" },
+        { "id": "c", "text": "Boca Juniors" },
+        { "id": "d", "text": "Grêmio" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_24",
+      "question": "Quem conquistou o Mundial de Clubes da FIFA em 2014?",
+      "options": [
+        { "id": "a", "text": "Real Madrid" },
+        { "id": "b", "text": "San Lorenzo" },
+        { "id": "c", "text": "Auckland City" },
+        { "id": "d", "text": "Cruz Azul" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_25",
+      "question": "Qual seleção venceu a Eurocopa de 2004?",
+      "options": [
+        { "id": "a", "text": "Portugal" },
+        { "id": "b", "text": "Grécia" },
+        { "id": "c", "text": "França" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_26",
+      "question": "Quem foi campeão da Copa América de 2019?",
+      "options": [
+        { "id": "a", "text": "Chile" },
+        { "id": "b", "text": "Brasil" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_27",
+      "question": "Qual clube venceu a Champions League 2021/22?",
+      "options": [
+        { "id": "a", "text": "Liverpool" },
+        { "id": "b", "text": "Real Madrid" },
+        { "id": "c", "text": "Manchester City" },
+        { "id": "d", "text": "Chelsea" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "titulos_28",
+      "question": "Quem venceu a Copa do Mundo Feminina de 2019?",
+      "options": [
+        { "id": "a", "text": "Estados Unidos" },
+        { "id": "b", "text": "Holanda" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Inglaterra" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_29",
+      "question": "Qual clube foi campeão da Copa do Brasil 2018?",
+      "options": [
+        { "id": "a", "text": "Cruzeiro" },
+        { "id": "b", "text": "Corinthians" },
+        { "id": "c", "text": "Grêmio" },
+        { "id": "d", "text": "Atlético-PR" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "titulos_30",
+      "question": "Quem venceu a Supercopa da UEFA de 2022?",
+      "options": [
+        { "id": "a", "text": "Real Madrid" },
+        { "id": "b", "text": "Eintracht Frankfurt" },
+        { "id": "c", "text": "Chelsea" },
+        { "id": "d", "text": "Villarreal" }
+      ],
+      "correct_answer_id": "a"
     }
   ]
 }
