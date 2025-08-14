@@ -8,7 +8,6 @@ import 'package:r10_quiz/models/questions.dart';
 import 'package:r10_quiz/data/question_repository.dart';
 import 'package:r10_quiz/controllers/rewards_controller.dart';
 
-
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({
     super.key,
@@ -21,7 +20,7 @@ class QuestionScreen extends StatefulWidget {
   State<QuestionScreen> createState() => _QuestionScreenState();
 }
 
-class _QuestionScreenState extends State<QuestionScreen> {
+class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStateMixin {
   final _repo = QuestionRepository();
   late Future<QuestionPack> _futurePack;
 
@@ -34,12 +33,53 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   late final int _sessionSeed;
 
+  // ===== Timer por pergunta (barra que esvazia) =====
+  static const int _timePerQuestionSeconds = 12; // ajuste como quiser
+  late AnimationController _timerController;
+  QuestionPack? _pack; // referência ao pack sorteado com 10 perguntas
+
   @override
   void initState() {
     super.initState();
     RewardsController.instance.startNewGame();
     _sessionSeed = DateTime.now().millisecondsSinceEpoch % 1000000;
     _futurePack = _repo.loadFromAsset(_assetPathForCategory(widget.category));
+
+    // Quando carregar, sorteia 10 e inicia o timer da 1ª pergunta
+    _futurePack.then((value) {
+      if (!mounted) return;
+
+      final allQuestions = List<Question>.from(value.questions);
+      allQuestions.shuffle(Random());
+      final selectedQuestions = allQuestions.take(10).toList();
+
+      final packSorteado = QuestionPack(
+        category: value.category,
+        questions: selectedQuestions,
+      );
+
+      setState(() => _pack = packSorteado);
+      _startTimer();
+    });
+
+    // Controller da barra de tempo (0→1 internamente; visual usamos 1→0)
+    _timerController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: _timePerQuestionSeconds),
+    );
+
+    // Quando completar a duração (barra vazia), conta como errada e avança
+    _timerController.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        _onTimeUp();
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timerController.dispose();
+    super.dispose();
   }
 
   String _assetPathForCategory(String category) {
@@ -84,9 +124,42 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return _shuffled!;
   }
 
+  // ==== Timer helpers ====
+  void _startTimer() {
+    if (!mounted) return;
+    _timerController
+      ..reset()
+      ..forward();
+  }
+
+  void _pauseTimer() {
+    if (_timerController.isAnimating) {
+      _timerController.stop();
+    }
+  }
+
+  void _onTimeUp() {
+    // Se já está travado por seleção, não faz nada
+    if (_locked) return;
+
+    setState(() {
+      _locked = true;   // usuário não respondeu no tempo → conta como errada
+      _selectedId = null;
+    });
+
+    // Avança automaticamente (pequeno delay para feedback, se quiser animar algo)
+    Future.delayed(const Duration(milliseconds: 200), () {
+      if (!mounted || _pack == null) return;
+      _next(_pack!);
+    });
+  }
+
   void _onSelect(Question q, AnswerOption opt) {
     if (_locked) return;
     final isCorrect = q.isCorrect(opt.id);
+
+    _pauseTimer(); // para o timer ao selecionar
+
     setState(() {
       _selectedId = opt.id;
       _locked = true;
@@ -94,9 +167,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     });
 
     //RewardsController.instance.registerAnswer(isCorrect: isCorrect);
-
-
-    
   }
 
   void _next(QuestionPack pack) {
@@ -107,34 +177,32 @@ class _QuestionScreenState extends State<QuestionScreen> {
         _locked = false;
         _shuffled = null;
       });
+      _startTimer(); // reinicia a barra na próxima pergunta
     } else {
       _finish(pack);
     }
   }
 
   void _finish(QuestionPack pack) async {
-  final int total = pack.questions.length; 
-  RewardsController.instance.registerFinalScore(_score);
+    final int total = pack.questions.length;
+    RewardsController.instance.registerFinalScore(_score);
 
-  if (!mounted) return;
+    if (!mounted) return;
 
-  final Widget result = _score == 0
-      ? const RonaldinhoFailScreen()
-      : RonaldinhoWinScreen( 
-          correct: _score,
-          total: total,
-      );
+    final Widget result = _score == 0
+        ? const RonaldinhoFailScreen()
+        : RonaldinhoWinScreen(
+      correct: _score,
+      total: total,
+    );
 
-  await Navigator.of(context).pushReplacement(
-    MaterialPageRoute(
-      builder: (_) => result,
-      settings: const RouteSettings(name: '/quiz_result'),
-    ),
-  );
-}
-
-
-
+    await Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => result,
+        settings: const RouteSettings(name: '/quiz_result'),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -157,7 +225,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
             );
           }
 
-          final pack = snap.data!;
+          // Usa o pack sorteado (10 perguntas) quando disponível
+          final pack = _pack ?? snap.data!;
+
           if (pack.questions.isEmpty) {
             return const Center(
               child: Text(
@@ -184,8 +254,40 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     total: total,
                   ),
                   const SizedBox(height: 20),
+
                   _QuestionCard(text: q.question),
+
+                  const SizedBox(height: 10),
+
+                  // ===== Barra de tempo (sem números) =====
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Container(
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.black12),
+                      ),
+                      child: AnimatedBuilder(
+                        animation: _timerController,
+                        builder: (context, _) {
+                          // Visual: 1.0 (cheio) → 0.0 (vazio)
+                          final double fill = (1.0 - _timerController.value).clamp(0.0, 1.0);
+                          return FractionallySizedBox(
+                            alignment: Alignment.centerLeft,
+                            widthFactor: fill,
+                            child: Container(
+                              color: const Color(0xFF4F378A),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+
                   const SizedBox(height: 20),
+
                   ...options.map((opt) {
                     final isSelected = _selectedId == opt.id;
                     final isCorrect = q.isCorrect(opt.id);
@@ -199,8 +301,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       }
                     }
 
-                    
-
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: _OptionTile(
@@ -212,7 +312,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                     );
                   }),
+
                   const SizedBox(height: 20),
+
                   ElevatedButton(
                     onPressed: _selectedId == null ? null : () => _next(pack),
                     style: ElevatedButton.styleFrom(
@@ -322,7 +424,7 @@ class _OptionTile extends StatelessWidget {
         return (isCorrectForRipple ? Colors.green : Colors.red).withOpacity(0.80);
       }
       if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-        return Colors.black12; // opcional
+        return Colors.black12;
       }
       return null;
     });
@@ -334,7 +436,7 @@ class _OptionTile extends StatelessWidget {
       child: InkWell(
         onTap: enabled ? onTap : null,
         borderRadius: BorderRadius.circular(12),
-        overlayColor: overlay,        // << AQUI COLORIMOS O RIPPLE
+        overlayColor: overlay, // ripple color
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
           decoration: BoxDecoration(

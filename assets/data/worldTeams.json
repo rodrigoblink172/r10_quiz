@@ -110,6 +110,226 @@
         { "id": "d", "text": "Africa do Sul" }
       ],
       "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_11",
+      "question": "Qual seleção venceu a primeira Copa do Mundo em 1930?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_12",
+      "question": "Qual seleção é conhecida como 'Les Bleus'?",
+      "options": [
+        { "id": "a", "text": "França" },
+        { "id": "b", "text": "Itália" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_13",
+      "question": "Qual seleção africana é conhecida como 'Super Águias'?",
+      "options": [
+        { "id": "a", "text": "Nigéria" },
+        { "id": "b", "text": "Gana" },
+        { "id": "c", "text": "Camarões" },
+        { "id": "d", "text": "Senegal" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_14",
+      "question": "Qual seleção africana é conhecida como 'Os Leões Indomáveis'?",
+      "options": [
+        { "id": "a", "text": "Gana" },
+        { "id": "b", "text": "Camarões" },
+        { "id": "c", "text": "Nigéria" },
+        { "id": "d", "text": "Senegal" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_15",
+      "question": "Qual seleção venceu a Copa do Mundo de 1998?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Alemanha" },
+        { "id": "d", "text": "Itália" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_16",
+      "question": "Qual seleção asiática é conhecida como 'Tigres da Ásia'?",
+      "options": [
+        { "id": "a", "text": "Coreia do Sul" },
+        { "id": "b", "text": "Japão" },
+        { "id": "c", "text": "China" },
+        { "id": "d", "text": "Arábia Saudita" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_17",
+      "question": "Qual seleção foi campeã da Copa América em 2016?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Chile" },
+        { "id": "c", "text": "Argentina" },
+        { "id": "d", "text": "Uruguai" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_18",
+      "question": "Qual seleção é conhecida como 'Samurais Azuis'?",
+      "options": [
+        { "id": "a", "text": "Coreia do Sul" },
+        { "id": "b", "text": "China" },
+        { "id": "c", "text": "Japão" },
+        { "id": "d", "text": "Irã" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "selecoes_19",
+      "question": "Qual seleção é apelidada de 'Canarinho'?",
+      "options": [
+        { "id": "a", "text": "Brasil" },
+        { "id": "b", "text": "Colômbia" },
+        { "id": "c", "text": "Equador" },
+        { "id": "d", "text": "Peru" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_20",
+      "question": "Qual seleção da Concacaf é conhecida como 'El Tri'?",
+      "options": [
+        { "id": "a", "text": "Costa Rica" },
+        { "id": "b", "text": "México" },
+        { "id": "c", "text": "Honduras" },
+        { "id": "d", "text": "Panamá" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_21",
+      "question": "Qual seleção africana venceu a Copa Africana de Nações de 2019?",
+      "options": [
+        { "id": "a", "text": "Nigéria" },
+        { "id": "b", "text": "Senegal" },
+        { "id": "c", "text": "Argélia" },
+        { "id": "d", "text": "Egito" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "selecoes_22",
+      "question": "Qual seleção é conhecida como 'Os Socceroos'?",
+      "options": [
+        { "id": "a", "text": "Nova Zelândia" },
+        { "id": "b", "text": "Austrália" },
+        { "id": "c", "text": "África do Sul" },
+        { "id": "d", "text": "Indonésia" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_23",
+      "question": "Qual seleção da América do Sul é chamada de 'La Celeste'?",
+      "options": [
+        { "id": "a", "text": "Argentina" },
+        { "id": "b", "text": "Uruguai" },
+        { "id": "c", "text": "Chile" },
+        { "id": "d", "text": "Paraguai" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_24",
+      "question": "Qual seleção europeia venceu a Euro 2020 (disputada em 2021)?",
+      "options": [
+        { "id": "a", "text": "Inglaterra" },
+        { "id": "b", "text": "Itália" },
+        { "id": "c", "text": "França" },
+        { "id": "d", "text": "Portugal" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_25",
+      "question": "Qual seleção africana é conhecida como 'As Águias de Cartago'?",
+      "options": [
+        { "id": "a", "text": "Nigéria" },
+        { "id": "b", "text": "Tunísia" },
+        { "id": "c", "text": "Marrocos" },
+        { "id": "d", "text": "Egito" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_26",
+      "question": "Qual seleção venceu a Copa do Mundo de 2006?",
+      "options": [
+        { "id": "a", "text": "Itália" },
+        { "id": "b", "text": "França" },
+        { "id": "c", "text": "Brasil" },
+        { "id": "d", "text": "Alemanha" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_27",
+      "question": "Qual seleção é chamada de 'Bafana Bafana'?",
+      "options": [
+        { "id": "a", "text": "Nigéria" },
+        { "id": "b", "text": "África do Sul" },
+        { "id": "c", "text": "Gana" },
+        { "id": "d", "text": "Camarões" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "selecoes_28",
+      "question": "Qual seleção da América do Norte venceu a Copa Ouro de 2021?",
+      "options": [
+        { "id": "a", "text": "México" },
+        { "id": "b", "text": "Canadá" },
+        { "id": "c", "text": "Estados Unidos" },
+        { "id": "d", "text": "Costa Rica" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "selecoes_29",
+      "question": "Qual seleção é conhecida como 'Os Diabos Vermelhos'?",
+      "options": [
+        { "id": "a", "text": "Bélgica" },
+        { "id": "b", "text": "Chile" },
+        { "id": "c", "text": "Suíça" },
+        { "id": "d", "text": "Áustria" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "selecoes_30",
+      "question": "Qual seleção asiática venceu a Copa da Ásia de 2019?",
+      "options": [
+        { "id": "a", "text": "Japão" },
+        { "id": "b", "text": "Irã" },
+        { "id": "c", "text": "Catar" },
+        { "id": "d", "text": "Coreia do Sul" }
+      ],
+      "correct_answer_id": "c"
     }
   ]
 }

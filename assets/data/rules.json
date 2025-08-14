@@ -110,6 +110,226 @@
         { "id": "d", "text": "Pedido de um time" }
       ],
       "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_11",
+      "question": "Quantos jogadores cada equipe deve ter, no mínimo, para continuar uma partida oficial?",
+      "options": [
+        { "id": "a", "text": "7" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "10" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_12",
+      "question": "O que acontece se um jogador receber dois cartões amarelos na mesma partida?",
+      "options": [
+        { "id": "a", "text": "Advertência verbal" },
+        { "id": "b", "text": "Cartão vermelho" },
+        { "id": "c", "text": "Tiro livre" },
+        { "id": "d", "text": "Substituição obrigatória" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_13",
+      "question": "Qual é a altura máxima permitida para uma trave de futebol profissional?",
+      "options": [
+        { "id": "a", "text": "2 metros" },
+        { "id": "b", "text": "2,44 metros" },
+        { "id": "c", "text": "3 metros" },
+        { "id": "d", "text": "2,20 metros" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_14",
+      "question": "O que caracteriza um impedimento?",
+      "options": [
+        { "id": "a", "text": "Estar mais próximo do gol adversário que o penúltimo defensor" },
+        { "id": "b", "text": "Chutar antes da marcação" },
+        { "id": "c", "text": "Dar carrinho" },
+        { "id": "d", "text": "Segurar a bola com as mãos" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_15",
+      "question": "Qual é a distância mínima da barreira em uma cobrança de falta?",
+      "options": [
+        { "id": "a", "text": "7 metros" },
+        { "id": "b", "text": "9,15 metros" },
+        { "id": "c", "text": "10 metros" },
+        { "id": "d", "text": "8 metros" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_16",
+      "question": "Qual dessas ações resulta em tiro livre indireto?",
+      "options": [
+        { "id": "a", "text": "Toque de mão" },
+        { "id": "b", "text": "Falta por empurrão" },
+        { "id": "c", "text": "Jogo perigoso sem contato" },
+        { "id": "d", "text": "Carrinho por trás" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "regras_17",
+      "question": "O que acontece se a bola bater no árbitro e mudar de posse de forma significativa?",
+      "options": [
+        { "id": "a", "text": "Segue o jogo" },
+        { "id": "b", "text": "Tiro de meta" },
+        { "id": "c", "text": "Bola ao chão" },
+        { "id": "d", "text": "Escanteio" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "regras_18",
+      "question": "Quantas substituições são permitidas normalmente em competições oficiais da FIFA?",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "regras_19",
+      "question": "Quando é concedido um pênalti?",
+      "options": [
+        { "id": "a", "text": "Quando ocorre uma falta dentro da área do goleiro" },
+        { "id": "b", "text": "Quando o goleiro demora para repor a bola" },
+        { "id": "c", "text": "Quando a bola sai pela linha lateral" },
+        { "id": "d", "text": "Quando a bola é recuada ao goleiro" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_20",
+      "question": "O que o goleiro não pode fazer ao receber a bola recuada com o pé por um companheiro?",
+      "options": [
+        { "id": "a", "text": "Chutar para frente" },
+        { "id": "b", "text": "Pegar com as mãos" },
+        { "id": "c", "text": "Passar para outro jogador" },
+        { "id": "d", "text": "Sair da área" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_21",
+      "question": "Qual o procedimento correto para iniciar uma partida?",
+      "options": [
+        { "id": "a", "text": "Lançamento lateral" },
+        { "id": "b", "text": "Bola ao chão" },
+        { "id": "c", "text": "Tiro livre" },
+        { "id": "d", "text": "Tiro de saída" }
+      ],
+      "correct_answer_id": "d"
+    },
+    {
+      "id": "regras_22",
+      "question": "Em qual situação é marcado tiro de meta?",
+      "options": [
+        { "id": "a", "text": "A bola cruza a linha de gol após último toque do ataque" },
+        { "id": "b", "text": "A bola cruza a linha de gol após último toque da defesa" },
+        { "id": "c", "text": "O goleiro sai da área" },
+        { "id": "d", "text": "O árbitro interrompe o jogo" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_23",
+      "question": "Qual é o formato oficial da bola de futebol?",
+      "options": [
+        { "id": "a", "text": "Oval" },
+        { "id": "b", "text": "Esférico" },
+        { "id": "c", "text": "Cúbico" },
+        { "id": "d", "text": "Retangular" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_24",
+      "question": "O que caracteriza conduta violenta?",
+      "options": [
+        { "id": "a", "text": "Jogar a bola com força" },
+        { "id": "b", "text": "Tentar machucar um adversário sem disputar a bola" },
+        { "id": "c", "text": "Gritar com o árbitro" },
+        { "id": "d", "text": "Comemorar o gol" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_25",
+      "question": "Qual é a função do quarto árbitro?",
+      "options": [
+        { "id": "a", "text": "Marcar impedimentos" },
+        { "id": "b", "text": "Controlar substituições e tempo adicional" },
+        { "id": "c", "text": "Apitar faltas" },
+        { "id": "d", "text": "Atuar como goleiro reserva" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_26",
+      "question": "Quando um jogador pode entrar em campo?",
+      "options": [
+        { "id": "a", "text": "Quando o árbitro autoriza" },
+        { "id": "b", "text": "Quando o técnico chama" },
+        { "id": "c", "text": "Quando o capitão permite" },
+        { "id": "d", "text": "Quando a bola estiver fora" }
+      ],
+      "correct_answer_id": "a"
+    },
+    {
+      "id": "regras_27",
+      "question": "O que acontece se o goleiro adiantar-se antes da cobrança de pênalti e defender?",
+      "options": [
+        { "id": "a", "text": "Segue o jogo" },
+        { "id": "b", "text": "Repetição da cobrança" },
+        { "id": "c", "text": "Gol válido" },
+        { "id": "d", "text": "Cartão vermelho" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_28",
+      "question": "O que caracteriza mão na bola segundo as regras atuais?",
+      "options": [
+        { "id": "a", "text": "Qualquer toque de mão" },
+        { "id": "b", "text": "Toque intencional ou que aumente a área do corpo" },
+        { "id": "c", "text": "Contato acidental" },
+        { "id": "d", "text": "Toque em cobrança de lateral" }
+      ],
+      "correct_answer_id": "b"
+    },
+    {
+      "id": "regras_29",
+      "question": "Qual a cor do cartão usado para expulsar um jogador?",
+      "options": [
+        { "id": "a", "text": "Amarelo" },
+        { "id": "b", "text": "Azul" },
+        { "id": "c", "text": "Vermelho" },
+        { "id": "d", "text": "Branco" }
+      ],
+      "correct_answer_id": "c"
+    },
+    {
+      "id": "regras_30",
+      "question": "O que ocorre se um jogador marcar um gol diretamente de um arremesso lateral?",
+      "options": [
+        { "id": "a", "text": "Gol válido" },
+        { "id": "b", "text": "Tiro de meta" },
+        { "id": "c", "text": "Gol anulado" },
+        { "id": "d", "text": "Escanteio" }
+      ],
+      "correct_answer_id": "c"
     }
   ]
 }
