@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:r10_quiz/screens/ronaldinho_fail.dart';
 import 'package:r10_quiz/screens/ronaldinho_win.dart';
 import 'package:r10_quiz/widgets/app_shell.dart';
@@ -11,7 +12,7 @@ import 'package:r10_quiz/controllers/rewards_controller.dart';
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({
     super.key,
-    required this.category, // Ex.: "História"
+    required this.category,
   });
 
   final String category;
@@ -272,7 +273,6 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
                       child: AnimatedBuilder(
                         animation: _timerController,
                         builder: (context, _) {
-                          // Visual: 1.0 (cheio) → 0.0 (vazio)
                           final double fill = (1.0 - _timerController.value).clamp(0.0, 1.0);
                           return FractionallySizedBox(
                             alignment: Alignment.centerLeft,
@@ -373,29 +373,35 @@ class _QuestionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x1F000000),
-            blurRadius: 10,
-            offset: Offset(0, 4),
-          ),
-        ],
-        border: Border.all(color: Colors.black12),
-      ),
-      child: Text(
-        text,
-        style: const TextStyle(
-          color: Colors.black87,
-          fontSize: 18,
-          height: 1.35,
-          fontWeight: FontWeight.w600,
+    return SizedBox(
+      height: 120, // altura fixa para todas as perguntas
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: const [
+            BoxShadow(
+              color: Color(0x1F000000),
+              blurRadius: 10,
+              offset: Offset(0, 4),
+            ),
+          ],
+          border: Border.all(color: Colors.black12),
         ),
-        textAlign: TextAlign.center,
+        child: AutoSizeText(
+          text,
+          style: const TextStyle(
+            color: Colors.black87,
+            fontSize: 20, // tamanho máximo
+            fontWeight: FontWeight.w600,
+            height: 1.35,
+          ),
+          textAlign: TextAlign.center,
+          maxLines: 3,       // permite até 3 linhas
+          minFontSize: 14,   // nunca menor que 14
+          overflow: TextOverflow.ellipsis,
+        ),
       ),
     );
   }
@@ -429,28 +435,36 @@ class _OptionTile extends StatelessWidget {
       return null;
     });
 
-    return Material(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(12),
-      elevation: 2,
-      child: InkWell(
-        onTap: enabled ? onTap : null,
+    return SizedBox(
+      height: 60, // altura fixa para todas as opções
+      child: Material(
+        color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        overlayColor: overlay, // ripple color
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: borderColor ?? Colors.black12, width: 2),
-          ),
-          child: Text(
-            label,
-            style: const TextStyle(
-              color: Colors.black87,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
+        elevation: 2,
+        child: InkWell(
+          onTap: enabled ? onTap : null,
+          borderRadius: BorderRadius.circular(12),
+          overlayColor: overlay, // ripple color
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: borderColor ?? Colors.black12, width: 2),
             ),
-            textAlign: TextAlign.center,
+            child: Center(
+              child: AutoSizeText(
+                label,
+                style: const TextStyle(
+                  color: Colors.black87,
+                  fontSize: 16, // tamanho máximo
+                  fontWeight: FontWeight.w600,
+                ),
+                textAlign: TextAlign.center,
+                maxLines: 2,       // até 2 linhas nas opções
+                minFontSize: 12,   // nunca menor que 12
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
           ),
         ),
       ),
