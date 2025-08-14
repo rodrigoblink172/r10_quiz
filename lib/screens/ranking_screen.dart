@@ -96,7 +96,6 @@ class RankingScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // mini estatísticas à direita (PTS, V, D, N)
                           _miniStat('99'),
                           _miniStat('54'),
                           _miniStat('12'),
@@ -107,7 +106,6 @@ class RankingScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Subtítulo com medalha (ex.: Amador 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -129,7 +127,6 @@ class RankingScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Card com a tabela de ranking
                   ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 720),
                     child: Container(
@@ -212,7 +209,6 @@ class _RankingTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Header
         Container(
           height: 40,
           decoration: BoxDecoration(
@@ -233,7 +229,6 @@ class _RankingTable extends StatelessWidget {
         ),
         const SizedBox(height: 6),
 
-        // Linhas
         ...List.generate(rows.length, (index) {
           final r = rows[index];
           final isHighlight = highlightRowIndex == index;
@@ -248,7 +243,6 @@ class _RankingTable extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
               children: [
-                // posição
                 SizedBox(
                   width: _posWidth,
                   child: Text(
@@ -269,7 +263,6 @@ class _RankingTable extends StatelessWidget {
                   ),
                 ),
 
-                // métricas
                 SizedBox(
                   width: _ptsWidth,
                   child: Text('${r.pts}', textAlign: TextAlign.right, style: _rowStyle(rowTextColor)),
