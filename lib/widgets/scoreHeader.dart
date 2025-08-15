@@ -116,11 +116,10 @@ class scoreHeader extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 0),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 4, right: 30),
-                          child: Text(
-                            '${rewards.hats}', // dinâmico
-                            style: const TextStyle(
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 4, right: 30),
+                          child: HatsText(
+                            style: TextStyle( // dinâmico
                               color: Colors.black,
                               fontSize: 20,
                             ),
