@@ -6,6 +6,7 @@ import 'package:r10_quiz/controllers/rewards_controller.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+
 class HatsText extends StatelessWidget {
   const HatsText({super.key, this.style});
   final TextStyle? style;
