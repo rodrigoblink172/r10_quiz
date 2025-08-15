@@ -3,6 +3,64 @@ import 'package:flutter/material.dart';
 import 'package:r10_quiz/config/colors.dart';
 import 'package:r10_quiz/screens/ranking_screen.dart';
 import 'package:r10_quiz/controllers/rewards_controller.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+class HatsText extends StatelessWidget {
+  const HatsText({super.key, this.style});
+  final TextStyle? style;
+
+  @override Widget build(BuildContext context) {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    final userDoc = FirebaseFirestore.instance.collection('users').doc(uid).snapshots();
+
+    return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+      stream: userDoc, 
+      builder: (context, snap) {
+        if (snap.connectionState == ConnectionState.waiting) {
+          return Text('0', style: style); 
+        }
+        final data = snap.data?.data();
+        final raw = data?['hats'] ?? 0;
+        final hats = raw is int ? raw : (raw as num).toInt();
+
+        return Text('$hats', style: style);
+          },
+        );
+      }
+    
+  }
+
+
+
+
+
+class CoinsText extends StatelessWidget {
+  const CoinsText({super.key, this.style});
+  final TextStyle? style;
+
+
+  @override
+  Widget build(BuildContext context) {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    final userDoc = FirebaseFirestore.instance.collection('users').doc(uid).snapshots();
+
+    return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+      stream: userDoc,
+      builder: (context, snap) {
+        if (snap.connectionState == ConnectionState.waiting) {
+          return Text('0', style: style); 
+        }
+        final data = snap.data?.data();
+        final raw = data?['coins'] ?? 0;
+        final coins = raw is int ? raw : (raw as num).toInt(); 
+
+        return Text('$coins', style: style);
+      },
+    );
+  }
+}
+
 
 class scoreHeader extends StatelessWidget {
   const scoreHeader({super.key});
@@ -100,11 +158,10 @@ class scoreHeader extends StatelessWidget {
                           height: 50,
                         ),
                         const SizedBox(width: 0),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 4),
-                          child: Text(
-                            '${rewards.coins}', // dinâmico
-                            style: const TextStyle(
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 4),
+                          child: CoinsText(
+                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
                             ),
