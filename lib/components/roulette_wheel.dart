@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:r10_quiz/controllers/rewards_controller.dart';
 import 'package:roulette/roulette.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart'; // HapticFeedback
@@ -172,6 +173,7 @@ class _RouletteWheelState extends State<RouletteWheel> {
               elevation: 4, // Sombra
             ),
             onPressed: () async {
+              RewardsController.instance.startNewGame();
               // Tenta tocar o áudio; se falhar, apenas ignora e gira.
               try {
                 await _audioPlayer.play(
@@ -187,6 +189,8 @@ class _RouletteWheelState extends State<RouletteWheel> {
               style: TextStyle(fontSize: 20),
             ),
           ),
+
+          
         ),
       ],
     );

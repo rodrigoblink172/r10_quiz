@@ -184,26 +184,26 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
     }
   }
 
-  void _finish(QuestionPack pack) async {
-    final int total = pack.questions.length;
-    RewardsController.instance.registerFinalScore(_score);
+void _finish(QuestionPack pack) async {
+  final int total = pack.questions.length;
 
-    if (!mounted) return;
+  await RewardsController.instance
+      .registerFinalScore(_score, totalQuestions: total);
 
-    final Widget result = _score == 0
-        ? const RonaldinhoFailScreen()
-        : RonaldinhoWinScreen(
-      correct: _score,
-      total: total,
-    );
+  if (!mounted) return;
 
-    await Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (_) => result,
-        settings: const RouteSettings(name: '/quiz_result'),
-      ),
-    );
-  }
+  final Widget result = _score == 0
+      ? const RonaldinhoFailScreen()
+      : RonaldinhoWinScreen(correct: _score, total: total);
+
+  await Navigator.of(context).pushReplacement(
+    MaterialPageRoute(
+      builder: (_) => result,
+      settings: const RouteSettings(name: '/quiz_result'),
+    ),
+  );
+}
+
 
   @override
   Widget build(BuildContext context) {

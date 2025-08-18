@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:r10_quiz/widgets/app_shell.dart';
 import 'package:r10_quiz/widgets/scoreHeader.dart';
 import 'package:r10_quiz/components/roulette_wheel.dart';
-import 'package:r10_quiz/screens/questions_screen.dart'; // <— importe a tela de perguntas
+import 'package:r10_quiz/screens/questions_screen.dart'; 
 
 class QuizWheelScreen extends StatelessWidget {
   const QuizWheelScreen({Key? key}) : super(key: key);

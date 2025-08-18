@@ -71,7 +71,8 @@ class scoreHeader extends StatelessWidget {
     final rewards = RewardsController.instance;
 
     return AnimatedBuilder(
-      animation: rewards,
+      
+      animation: rewards, 
       builder: (context, _) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.end,
