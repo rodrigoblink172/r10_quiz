@@ -77,16 +77,54 @@ class scoreHeader extends StatelessWidget {
         return Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+              
+              // Shopping
             Container(
               decoration: BoxDecoration(
                 color: AppColors.boxButton,
                 borderRadius: BorderRadius.circular(20),
               ),
-              padding: const EdgeInsets.only(top: 2, bottom: 0, left: 5),
+              padding: const EdgeInsets.only(top: 2, bottom: 0),
+              margin: const EdgeInsets.only(left: 15),
+              width: 60,
+              height: 40,
+              child: GestureDetector(
+                onTap: () {
+                  final currentRout = ModalRoute.of(context)?.settings.name;
+                  if (currentRout != '/ranking') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RankingScreen(),
+                        settings: const RouteSettings(name: '/ranking'),
+                      ),
+                    );
+                  }
+                },
+                child: Image.asset(
+                  'assets/images/shopping_icon.png',
+                  width: 90,
+                  height: 45,
+                ),
+              ),
+            ),
+
+            //COINS AND HATS
+            Container(
+              decoration: BoxDecoration(
+                color: AppColors.boxButton,
+                borderRadius: BorderRadius.circular(20),
+                
+              ),
+              padding: const EdgeInsets.only(top: 2, bottom: 0, left: 2),
+              margin: const EdgeInsets.only(left: 8, right: 8),
+
+              
               width: 215,
               height: 38,
               child: Row(
                 children: [
+
                   // HATS
                   GestureDetector(
                     onTap: () async {
@@ -175,14 +213,14 @@ class scoreHeader extends StatelessWidget {
               ),
             ),
 
-            // BOTÃO RANKING
+            //  RANKING
             Container(
               decoration: BoxDecoration(
                 color: AppColors.boxButton,
                 borderRadius: BorderRadius.circular(20),
               ),
               padding: const EdgeInsets.only(top: 2, bottom: 0),
-              margin: const EdgeInsets.only(left: 15),
+              
               width: 60,
               height: 40,
               child: GestureDetector(
@@ -205,6 +243,7 @@ class scoreHeader extends StatelessWidget {
                 ),
               ),
             ),
+            
           ],
         );
       },
