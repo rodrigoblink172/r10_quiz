@@ -34,6 +34,12 @@ class RewardsController extends ChangeNotifier {
     _hats  += earnedHats;
     notifyListeners();
 
+    // 5 Moedas por acerto e 2 hats a cada 5 acertos
+    // 10 acertos = 50 moedas
+    // 10 acertos = 2 hats
+    
+
+
     // persiste no Firestore (Ranking lê daqui)
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid != null) {
