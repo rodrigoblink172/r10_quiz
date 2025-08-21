@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:r10_quiz/config/colors.dart';
 import 'package:r10_quiz/screens/ranking_screen.dart';
+import 'package:r10_quiz/screens/shopping_screen.dart';
 import 'package:r10_quiz/controllers/rewards_controller.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -34,7 +35,6 @@ class HatsText extends StatelessWidget {
     return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
       stream: userDoc,
       builder: (context, snap) {
-        // ALTERAÇÃO: Melhores tratamentos de estado
         if (snap.connectionState == ConnectionState.waiting) {
           return Text('0',
             key: const Key('hats_text_loading'),
@@ -129,6 +129,42 @@ class ScoreHeader extends StatelessWidget {
 
   /// Navega para tela de ranking evitando navegação duplicada
   /// ALTERAÇÃO: Função extraída para melhor testabilidade
+    void _navigateToShopping(BuildContext context, String buttonType) {
+    final currentRoute = ModalRoute.of(context)?.settings.name;
+
+    if (currentRoute != '/shopping') {
+      debugPrint('Navegando para shopping via $buttonType');
+
+      Navigator.push(
+        context,
+        PageRouteBuilder(
+          settings: const RouteSettings(name: '/shopping'),
+          pageBuilder: (context, animation, secondaryAnimation) =>
+          const ShoppingScreen(
+            // ALTERAÇÃO: Locator para tela de destino
+            key: Key('shopping_screen_from_header'),
+          ),
+          // ALTERAÇÃO: Animação personalizada
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0.0, -1.0),
+                end: Offset.zero,
+              ).animate(CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeInOut,
+              )),
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 300),
+        ),
+      );
+    } else {
+      debugPrint('Já na tela de ranking - ignorando navegação');
+    }
+  }
+
   void _navigateToRanking(BuildContext context, String buttonType) {
     final currentRoute = ModalRoute.of(context)?.settings.name;
 
@@ -226,21 +262,22 @@ class ScoreHeader extends StatelessWidget {
       builder: (context, _) {
         return Container(
           key: const Key('score_header_main_container'),
+          child: Center(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // ALTERAÇÃO: Shopping Button com melhorias
               _buildHeaderButton(
                 key: 'shopping_button',
                 width: 60,
                 height: 40,
-                margin: const EdgeInsets.only(left: 15),
-                onTap: () => _navigateToRanking(context, 'shopping'),
+                margin:  EdgeInsets.zero,
+                onTap: () => _navigateToShopping(context, 'shopping'),
                 child: Image.asset(
                   'assets/images/shopping_icon.png',
                   key: const Key('shopping_icon_image'),
-                  width: 90,
-                  height: 45,
+                  width: 85,
+                  height: 40,
                   // ALTERAÇÃO: ErrorBuilder para imagens
                   errorBuilder: (context, error, stackTrace) {
                     debugPrint('Erro ao carregar shopping_icon.png: $error');
@@ -256,13 +293,15 @@ class ScoreHeader extends StatelessWidget {
 
               // ALTERAÇÃO: Coins and Hats Container com melhorias
               Container(
+                
                 key: const Key('coins_hats_container'),
                 decoration: BoxDecoration(
                   color: AppColors.boxButton,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                padding: const EdgeInsets.only(top: 2, bottom: 0, left: 2),
-                margin: const EdgeInsets.only(left: 8, right: 8),
+                padding: const EdgeInsets.only(top: 2, left: 0),
+                margin: const EdgeInsets.only(left: 13, right: 13),
+                
                 width: 215,
                 height: 38,
                 child: Row(
@@ -282,7 +321,7 @@ class ScoreHeader extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      padding: const EdgeInsets.only(left: 5, right: 30, bottom: 4),
+                      padding: const EdgeInsets.only(left: 2, right: 0, bottom: 0),
                     ),
 
                     // ALTERAÇÃO: Coins Section melhorado
@@ -300,7 +339,7 @@ class ScoreHeader extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      padding: const EdgeInsets.only(bottom: 4),
+                      padding: const EdgeInsets.only(bottom: 2, left: 0),
                     ),
                   ],
                 ),
@@ -327,9 +366,11 @@ class ScoreHeader extends StatelessWidget {
                       size: 24,
                     );
                   },
+
                 ),
               ),
             ],
+          ),
           ),
         );
       },

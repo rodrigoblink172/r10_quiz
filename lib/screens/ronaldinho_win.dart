@@ -39,13 +39,19 @@ class _RonaldinhoWinScreenState extends State<RonaldinhoWinScreen> {
             const Padding(padding:  EdgeInsets.only(top: 350)),
 
 
-            const Icon(Icons.emoji_events, size: 100),
+            SizedBox(
+              width: 120,
+              height: 120,
+              child: Image.asset('assets/gif/trophy.gif', fit: BoxFit.contain),
+            ),
+
             const SizedBox(height: 16),
             const Text(
-              'Boa! Você mandou bem! 👏',
+              'Boa! Você mandou bem!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold,
+            
               ),
             ),
             const SizedBox(height: 4),

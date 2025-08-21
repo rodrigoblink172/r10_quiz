@@ -8,6 +8,8 @@ import 'package:r10_quiz/widgets/scoreHeader.dart';
 import 'package:r10_quiz/models/questions.dart';
 import 'package:r10_quiz/data/question_repository.dart';
 import 'package:r10_quiz/controllers/rewards_controller.dart';
+import 'package:audioplayers/audioplayers.dart';
+
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({
@@ -33,6 +35,8 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
   bool _locked = false;
 
   late final int _sessionSeed;
+  late final AudioPlayer _sfx;
+
 
   // ===== Timer por pergunta (barra que esvazia) =====
   static const int _timePerQuestionSeconds = 12; // ajuste como quiser
@@ -45,6 +49,7 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
     RewardsController.instance.startNewGame();
     _sessionSeed = DateTime.now().millisecondsSinceEpoch % 1000000;
     _futurePack = _repo.loadFromAsset(_assetPathForCategory(widget.category));
+    _sfx = AudioPlayer()..setReleaseMode(ReleaseMode.stop);
 
     // Quando carregar, sorteia 10 e inicia o timer da 1ª pergunta
     _futurePack.then((value) {
@@ -82,6 +87,14 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
     _timerController.dispose();
     super.dispose();
   }
+
+  Future<void> _playSfx(bool correct) async {
+  await _sfx.stop(); 
+  await _sfx.play(
+    AssetSource(correct ? 'sounds/success.mp3' : 'sounds/fail.mp3'),
+    volume: 1.0,
+  );
+}
 
   String _assetPathForCategory(String category) {
     switch (category) {
@@ -166,6 +179,8 @@ class _QuestionScreenState extends State<QuestionScreen> with TickerProviderStat
       _locked = true;
       if (isCorrect) _score++;
     });
+      _playSfx(isCorrect);
+
 
     //RewardsController.instance.registerAnswer(isCorrect: isCorrect);
   }
@@ -269,6 +284,7 @@ void _finish(QuestionPack pack) async {
                         color: Colors.black12,
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(color: Colors.black12),
+                        
                       ),
                       child: AnimatedBuilder(
                         animation: _timerController,

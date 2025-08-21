@@ -71,6 +71,7 @@ flutter:
     - assets/images/
     - assets/sounds/
     - assets/data/
+    - assets/gif/
 
 
   # The following line ensures that the Material Icons font is

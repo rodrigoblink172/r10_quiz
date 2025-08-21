@@ -67,9 +67,8 @@ class RankingScreen extends StatelessWidget {
               return a.erros.compareTo(b.erros); // menos erros primeiro
             });
 
-          final highlightIndex = uid == null
-              ? null
-              : users.indexWhere((u) => u.id == uid);
+          final highlightIndex =
+              uid == null ? null : users.indexWhere((u) => u.id == uid);
 
           // Usuário do chip superior (ou topo do ranking se não logado)
           final me = (highlightIndex != null && highlightIndex >= 0)
@@ -95,12 +94,12 @@ class RankingScreen extends StatelessWidget {
 
           return LayoutBuilder(
             builder: (context, constraints) {
-              return SingleChildScrollView(
+              return Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 64),
                 child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                      minHeight: constraints.maxHeight - 24),
+                  constraints:
+                      BoxConstraints(minHeight: constraints.maxHeight - 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -132,17 +131,17 @@ class RankingScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 10),
 
                       // Chip com o usuário destacado
                       ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: 560),
                         child: Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 12),
                           decoration: BoxDecoration(
                             color: purple,
                             borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: cardBorder, width: 2),
+
                             boxShadow: const [
                               BoxShadow(
                                 color: Color(0x1F000000),
@@ -151,13 +150,15 @@ class RankingScreen extends StatelessWidget {
                               ),
                             ],
                           ),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 16, vertical: 12),
                           child: Row(
                             children: [
                               _pill(
                                 '${rows.firstWhere(
-                                  (r) => r.id == me.id,
-                                  orElse: () => rows.first,
-                                ).position}',
+                                      (r) => r.id == me.id,
+                                      orElse: () => rows.first,
+                                    ).position}',
                               ),
                               const SizedBox(width: 10),
                               Expanded(
@@ -180,7 +181,7 @@ class RankingScreen extends StatelessWidget {
                         ),
                       ),
 
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 10),
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -206,7 +207,7 @@ class RankingScreen extends StatelessWidget {
                         ],
                       ),
 
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 10),
 
                       ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: 720),
@@ -224,16 +225,25 @@ class RankingScreen extends StatelessWidget {
                             ],
                           ),
                           padding: const EdgeInsets.all(12),
-                          child: _RankingTable(
-                            rows: rows,
-                            highlightRowIndex: (highlightIndex != null &&
-                                    highlightIndex >= 0)
-                                ? highlightIndex
-                                : null,
-                            headerColor: headerText,
-                            rowTextColor: Colors.white.withOpacity(0.95),
-                            background: darkPurple,
-                            highlightColor: purple,
+                          child: SizedBox(
+                            height: 245, // ajuste conforme seu layout
+                            child: Scrollbar(
+                              thumbVisibility: true,
+                              child: SingleChildScrollView(
+                                child: _RankingTable(
+                                  rows: rows,
+                                  highlightRowIndex: (highlightIndex != null &&
+                                          highlightIndex >= 0)
+                                      ? highlightIndex
+                                      : null,
+                                  headerColor: headerText,
+                                  rowTextColor: Colors.white.withOpacity(0.95),
+                                  
+                                  background: darkPurple,
+                                  highlightColor: purple,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -273,8 +283,7 @@ class _RankingUser {
     return 0;
   }
 
-  static _RankingUser fromDoc(
-      QueryDocumentSnapshot<Map<String, dynamic>> doc) {
+  static _RankingUser fromDoc(QueryDocumentSnapshot<Map<String, dynamic>> doc) {
     final d = doc.data();
     final stats = (d['stats'] as Map<String, dynamic>?) ?? {};
     final nome = (d['nome'] as String?)?.trim();
@@ -330,9 +339,9 @@ class _RankingTable extends StatelessWidget {
   final Color background;
   final Color highlightColor;
 
-  static const _posWidth = 28.0;
-  static const _ptsWidth = 44.0;
-  static const _vWidth = 36.0;
+  static const _posWidth = 10.0;
+  static const _ptsWidth = 40.0;
+  static const _vWidth = 40.0;
   static const _dWidth = 36.0;
   static const _rowH = 30.0;
 
@@ -385,7 +394,6 @@ class _RankingTable extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 6),
-
         ...List.generate(rows.length, (index) {
           final r = rows[index];
           final isHighlight = highlightRowIndex == index;
@@ -461,11 +469,12 @@ Widget _pill(String text) {
       borderRadius: BorderRadius.circular(14),
       border: Border.all(color: Colors.black87, width: 2),
       boxShadow: const [
-        BoxShadow(color: Color(0x26000000), blurRadius: 6, offset: Offset(0, 2)),
+        BoxShadow(
+            color: Color(0x26000000), blurRadius: 6, offset: Offset(0, 2)),
       ],
     ),
     alignment: Alignment.center,
-    child: Text(text, style: const TextStyle(fontWeight: FontWeight.w800)),
+    child: Text(text, style: const TextStyle(fontWeight: FontWeight.w800, color: Colors.black) ,),
   );
 }
 
